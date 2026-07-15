@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Štatúty súťaží a akcií — vyhľadávač pre infolinku</title>
+<style>
+  :root{
+    --navy:#0F2A4A;
+    --slate:#1F4E79;
+    --amber:#B9770E;
+    --amber-bg:#FCF1DC;
+    --rust:#9C4A3F;
+    --rust-bg:#F6E9E6;
+    --bg:#F5F6F8;
+    --card:#FFFFFF;
+    --line:#E1E4E9;
+    --text:#1E2430;
+    --muted:#616B7D;
+    --mono:'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter','Segoe UI',Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:var(--navy);
+    color:#fff;
+    padding:22px 28px 20px;
+  }
+  header h1{
+    margin:0 0 4px;
+    font-family:'IBM Plex Sans','Inter',sans-serif;
+    font-size:1.35rem;
+    font-weight:650;
+    letter-spacing:-0.01em;
+  }
+  header p{
+    margin:0;
+    color:#B7C3D6;
+    font-size:0.87rem;
+  }
+  .disclaimer{
+    background:var(--amber-bg);
+    color:#7A5308;
+    border-bottom:1px solid #EAD6A6;
+    padding:9px 28px;
+    font-size:0.82rem;
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+  .controls{
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+    padding:16px 28px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    align-items:flex-end;
+    position:sticky;
+    top:0;
+    z-index:5;
+  }
+  .field{ display:flex; flex-direction:column; gap:4px; }
+  .field label{ font-size:0.72rem; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:0.03em; }
+  .field input, .field select{
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:8px 10px;
+    font-size:0.88rem;
+    font-family:inherit;
+    color:var(--text);
+    background:#fff;
+  }
+  .field input:focus, .field select:focus{ outline:2px solid var(--slate); outline-offset:1px; }
+  #search{ min-width:260px; flex:1; }
+  .toggle-group{ display:flex; border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+  .toggle-group button{
+    border:none; background:#fff; padding:8px 12px; font-size:0.85rem; cursor:pointer; color:var(--muted);
+    border-right:1px solid var(--line);
+    font-family:inherit;
+  }
+  .toggle-group button:last-child{ border-right:none; }
+  .toggle-group button.active{ background:var(--slate); color:#fff; font-weight:600; }
+  .result-count{
+    padding:14px 28px 0;
+    font-size:0.82rem;
+    color:var(--muted);
+  }
+  .list{ padding:10px 28px 40px; display:flex; flex-direction:column; gap:10px; max-width:980px; margin:0 auto; }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--cat-color, var(--slate));
+    border-radius:8px;
+    padding:14px 16px;
+    cursor:pointer;
+  }
+  .card-title-row{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+  .card-title{ font-weight:650; font-size:0.98rem; color:var(--navy); }
+  .card-summary{ margin:6px 0 0; color:var(--muted); font-size:0.87rem; line-height:1.45; }
+  .badges{ display:flex; gap:6px; flex-shrink:0; align-items:center; }
+  .badge{ font-size:0.72rem; font-weight:650; padding:3px 8px; border-radius:20px; white-space:nowrap; }
+  .badge.active{ background:var(--amber-bg); color:var(--amber); }
+  .badge.expired{ background:var(--rust-bg); color:var(--rust); }
+  .badge.cat{ background:#EDF0F5; color:var(--slate); }
+  .reward{ display:inline-block; margin-top:6px; font-family:var(--mono); font-weight:650; color:var(--navy); font-size:0.85rem; background:#EEF3F8; padding:2px 8px; border-radius:5px; }
+  .eligibility{ margin-top:4px; font-size:0.8rem; color:var(--muted); font-style:italic; }
+  .card-details{ display:none; margin-top:12px; padding-top:12px; border-top:1px solid var(--line); font-size:0.87rem; }
+  .card.open .card-details{ display:block; }
+  .card-details h4{ margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.03em; color:var(--muted); }
+  .card-details ul{ margin:0 0 12px; padding-left:18px; }
+  .card-details li{ margin-bottom:3px; }
+  .meta-row{ display:flex; gap:24px; flex-wrap:wrap; margin-bottom:12px; font-family:var(--mono); font-size:0.82rem; color:var(--text); }
+  .meta-row span b{ display:block; font-family:'Inter',sans-serif; font-weight:600; font-size:0.68rem; text-transform:uppercase; color:var(--muted); margin-bottom:2px; letter-spacing:0.03em; }
+  .original-link{
+    display:inline-flex; align-items:center; gap:6px;
+    background:var(--navy); color:#fff; text-decoration:none;
+    padding:8px 14px; border-radius:6px; font-size:0.85rem; font-weight:600;
+    max-width:100%; white-space:normal; line-height:1.3;
+  }
+  .original-link:hover{ background:var(--slate); }
+  .empty{ text-align:center; color:var(--muted); padding:60px 20px; font-size:0.9rem; }
+  .expand-toggle{
+    border:1px solid var(--line);
+    background:#fff;
+    color:var(--slate);
+    padding:10px 12px;
+    min-width:125px;
+    border-radius:6px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:0.9rem;
+    font-weight:500;
+    transition:transform .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .expand-toggle:hover{ transform:translateY(-1px); border-color:var(--slate); background:#F8FBFF; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Štatúty súťaží a akcií — vyhľadávač</h1>
+  <p>Interný nástroj pre infolinku · zdroj: csob.sk/dolezite-dokumenty/statuty-sutazi</p>
+</header>
+
+<div class="disclaimer">
+  ⚠️ Zhrnutia sú generované automaticky a môžu obsahovať nepresnosti. Pred záväzným vyjadrením klientovi si vždy over detail v origináli (odkaz pri každej akcii).
+</div>
+
+<div class="controls">
+  <div class="field" style="flex:1;">
+    <label for="search">Hľadať</label>
+    <input id="search" type="text" placeholder="napr. 50 eur nový účet, refinancovanie hypotéky...">
+  </div>
+  <div class="field">
+    <label for="category">Kategória</label>
+    <select id="category"><option value="">Všetky</option></select>
+  </div>
+  <div class="field">
+    <label for="asOfDate">Klient tvrdí, že splnil podmienky dňa</label>
+    <input id="asOfDate" type="date">
+  </div>
+  <div class="field">
+    <label>Stav</label>
+    <div class="toggle-group" id="statusToggle">
+      <button data-val="all" class="active">Všetky</button>
+      <button data-val="active">Aktívne</button>
+      <button data-val="expired">Skončené</button>
+    </div>
+  </div>
+  <div class="field" style="margin-left:auto; align-self:flex-end;">
+    <button id="toggleAllCards" class="expand-toggle" type="button" aria-label="Rozbaliť všetko">Rozbaliť všetko</button>
+  </div>
+</div>
+<div class="result-count" id="resultCount"></div>
+<div class="list" id="list"></div>
+
+<script>
+let DATA = [];
+let allCategories = [];
+
+const EXPAND_TEXT = 'Rozbaliť všetko';
+const COLLAPSE_TEXT = 'Zbaliť všetko';
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+}
+
+function stripDiacritics(value) {
+  if (!value) return '';
+  return value.normalize?.('NFD').replace(/[\u0300-\u036f]/g, '') || value;
+}
+
+function formatDate(value) {
+  if (!value) return '—';
+  const d = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return value;
+  return d.toLocaleDateString('sk-SK', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+
+function statusOf(item) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const to = item.date_to ? new Date(`${item.date_to}T23:59:59`) : null;
+  if (to && to < today) return 'expired';
+  return 'active';
+}
+
+async function loadData() {
+  const listEl = document.getElementById('list');
+  const resultCountEl = document.getElementById('resultCount');
+  listEl.innerHTML = '<div class="empty">Načítavam údaje...</div>';
+
+  try {
+    const response = await fetch('./enrich_content/statuty_enriched.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    DATA = await response.json();
+    allCategories = Array.from(new Set(DATA.flatMap(item => (item.categories || ['Ostatné'])))).sort();
+
+    populateCategoryOptions();
+    render();
+  } catch (error) {
+    console.error('Nepodarilo sa načítať data:', error);
+    listEl.innerHTML = '<div class="empty">Nepodarilo sa načítať dáta z enrich_content/statuty_enriched.json. Spusti projekt cez lokálny webserver.</div>';
+    resultCountEl.textContent = '0 z 0 akcií';
+  }
+}
+
+function populateCategoryOptions() {
+  const select = document.getElementById('category');
+  select.innerHTML = '<option value="">Všetky</option>';
+  allCategories.forEach(category => {
+    const option = document.createElement('option');
+    option.value = category;
+    option.textContent = category;
+    select.appendChild(option);
+  });
+}
+
+function getFilteredData() {
+  const query = (document.getElementById('search').value || '').trim().toLowerCase();
+  const normalizedQuery = stripDiacritics(query);
+  const category = document.getElementById('category').value;
+  const asOfDate = document.getElementById('asOfDate').value;
+  const status = document.querySelector('#statusToggle .active')?.dataset.val || 'all';
+
+  return DATA.filter(item => {
+    const text = `${item.title || ''} ${item.summary || ''} ${item.reward || ''} ${(item.categories || []).join(' ')} ${(item.search_keywords || []).join(' ')}`;
+    const normalizedText = stripDiacritics(text.toLowerCase());
+    const matchesQuery = !normalizedQuery || normalizedText.includes(normalizedQuery);
+    const matchesCategory = !category || (item.categories || []).includes(category);
+    const matchesStatus = status === 'all' || statusOf(item) === status;
+    const matchesDate = !asOfDate || (
+      (item.date_from ? asOfDate >= item.date_from : true) &&
+      (item.date_to ? asOfDate <= item.date_to : true)
+    );
+
+    return matchesQuery && matchesCategory && matchesStatus && matchesDate;
+  });
+}
+
+function jumpToStatute(title) {
+  const target = document.querySelector(`.card[data-title="${CSS.escape(title)}"]`);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.classList.add('open');
+    updateToggleButton();
+  }
+}
+
+function updateToggleButton() {
+  const button = document.getElementById('toggleAllCards');
+  if (!button) return;
+
+  const cards = Array.from(document.querySelectorAll('.card'));
+  const hasOpenCards = cards.some(card => card.classList.contains('open'));
+  const label = hasOpenCards ? COLLAPSE_TEXT : EXPAND_TEXT;
+  button.textContent = label;
+  button.setAttribute('title', label);
+  button.setAttribute('aria-label', label);
+}
+
+function render() {
+  const filtered = getFilteredData();
+  document.getElementById('resultCount').textContent =
+    `${filtered.length} z ${DATA.length} akcií`;
+
+  const list = document.getElementById('list');
+  list.innerHTML = '';
+
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty">Nič nesedí na zadané filtre. Skús zmeniť hľadaný výraz alebo dátum.</div>';
+    updateToggleButton();
+    return;
+  }
+
+  const catColors = {};
+  const palette = ['#1F4E79','#7A6C46','#4E6B4A','#7A4A6B','#4A6B78','#8A5A3C'];
+  allCategories.forEach((c, i) => catColors[c] = palette[i % palette.length]);
+
+  filtered.forEach((item) => {
+    const st = statusOf(item);
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.title = item.title;
+    card.style.setProperty('--cat-color', catColors[(item.categories || ['Ostatné'])[0]] || '#1F4E79');
+
+    const badgeStatus = st === 'active'
+      ? '<span class="badge active">AKTÍVNE</span>'
+      : '<span class="badge expired">SKONČENÉ</span>';
+
+    const catBadges = (item.categories || ['Ostatné']).map(c => `<span class="badge cat">${escapeHtml(c)}</span>`).join('');
+
+    const related = (item.referenced_statutes_resolved || item.referenced_statutes || [])
+      .filter(r => typeof r === 'object' ? r.url : false);
+
+    const relatedHtml = related.length ? `
+        <h4>Súvisiaci štatút</h4>
+        <div style="margin-bottom:12px; display:flex; flex-wrap:wrap; gap:6px;">
+          ${related.map(r => `<button class="related-chip" data-jump="${escapeHtml(r.title)}" type="button" style="border:1px solid var(--line); background:#F5F6F8; color:var(--slate); border-radius:16px; padding:4px 10px; font-size:0.78rem; cursor:pointer;">${escapeHtml(r.title)} →</button>`).join('')}
+        </div>` : '';
+
+    card.innerHTML = `
+      <div class="card-top">
+        <div class="card-title-row">
+          <div class="card-title">${escapeHtml(item.short_title || item.title)}</div>
+          <div class="badges">
+            ${badgeStatus}
+            ${catBadges}
+          </div>
+        </div>
+        ${item.reward ? `<div class="reward">${escapeHtml(item.reward)}</div>` : ''}
+        <p class="card-summary">${escapeHtml(item.summary || '')}</p>
+        ${item.eligibility ? `<p class="eligibility">Pre koho: ${escapeHtml(item.eligibility)}</p>` : ''}
+      </div>
+      <div class="card-details">
+        <h4>Podmienky</h4>
+        <ul>${(item.conditions || []).map(c => `<li>${escapeHtml(c)}</li>`).join('') || '<li>Nešpecifikované</li>'}</ul>
+        ${relatedHtml}
+        <div class="meta-row">
+          <span><b>Platnosť od</b>${formatDate(item.date_from)}</span>
+          <span><b>Platnosť do</b>${formatDate(item.date_to)}</span>
+          <span><b>Vyplatenie do</b>${formatDate(item.payout_deadline)}</span>
+        </div>
+        <div class="meta-row" style="margin-top:-6px;">
+          <span style="font-family:inherit;"><b>Ako sa vypláca</b>${escapeHtml(item.payout_note || '—')}</span>
+        </div>
+        <a class="original-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Zobraziť originál: ${escapeHtml(item.title)} →</a>
+      </div>
+    `;
+    card.addEventListener('click', (e) => {
+      const jumpBtn = e.target.closest('[data-jump]');
+      if (jumpBtn) {
+        jumpToStatute(jumpBtn.dataset.jump);
+        return;
+      }
+      if (e.target.closest('a')) return;
+      card.classList.toggle('open');
+      updateToggleButton();
+    });
+    list.appendChild(card);
+  });
+
+  updateToggleButton();
+}
+
+function bindControls() {
+  document.getElementById('search').addEventListener('input', render);
+  document.getElementById('category').addEventListener('change', render);
+  document.getElementById('asOfDate').addEventListener('change', render);
+
+  document.querySelectorAll('#statusToggle button').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('#statusToggle button').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      render();
+    });
+  });
+
+  document.getElementById('toggleAllCards')?.addEventListener('click', () => {
+    const cards = Array.from(document.querySelectorAll('.card'));
+    if (!cards.length) return;
+    const shouldExpand = !cards.some(card => card.classList.contains('open'));
+    cards.forEach(card => card.classList.toggle('open', shouldExpand));
+    updateToggleButton();
+  });
+}
+
+bindControls();
+loadData();
+</script>
+</body>
+</html>
