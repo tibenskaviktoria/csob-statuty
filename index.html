@@ -147,8 +147,8 @@
 <body>
 
 <header>
-  <h1>Štatúty súťaží a akcií — vyhľadávač</h1>
-  <p>Interný nástroj pre infolinku · zdroj: csob.sk/dolezite-dokumenty/statuty-sutazi</p>
+  <h1>Štatúty súťaží a akcií - vyhľadávač</h1>
+  <p>Interný nástroj pre zamestnancov ČSOB · Viktória Tibenská · zdroj: csob.sk/dolezite-dokumenty/statuty-sutazi</p>
 </header>
 
 <div class="disclaimer">
@@ -176,12 +176,14 @@
       <button data-val="expired">Skončené</button>
     </div>
   </div>
-  <div class="field" style="margin-left:auto; align-self:flex-end;">
+  <div class="field" style="margin-left:auto; align-self:flex-end; flex-direction:row; gap:8px;">
+    <button id="resetFilters" class="expand-toggle" type="button">Resetuj filtre</button>
     <button id="toggleAllCards" class="expand-toggle" type="button" aria-label="Rozbaliť všetko">Rozbaliť všetko</button>
   </div>
 </div>
 <div class="result-count" id="resultCount"></div>
 <div class="list" id="list"></div>
+<button id="backToTop" class="expand-toggle" type="button" style="display:none; position:fixed; bottom:24px; right:24px; z-index:10; box-shadow:0 4px 12px rgba(15,42,74,0.25); background:var(--navy); color:#fff; border-color:var(--navy);">↑ Späť hore</button>
 
 <script>
 let DATA = [];
@@ -273,12 +275,26 @@ function getFilteredData() {
   });
 }
 
+function resetFiltersToDefault() {
+  document.getElementById('search').value = '';
+  document.getElementById('category').value = '';
+  document.getElementById('asOfDate').value = '';
+  document.querySelectorAll('#statusToggle button').forEach(btn => btn.classList.remove('active'));
+  document.querySelector('#statusToggle button[data-val="all"]').classList.add('active');
+}
+
 function jumpToStatute(title) {
+  // Bez resetu filtrov by cieľová karta nemusela byť medzi vyfiltrovanými
+  // výsledkami vôbec vyrenderovaná - preto vždy najprv zrušíme filtre.
+  resetFiltersToDefault();
+  render();
   const target = document.querySelector(`.card[data-title="${CSS.escape(title)}"]`);
   if (target) {
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
     target.classList.add('open');
     updateToggleButton();
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.style.outline = '2px solid var(--amber)';
+    setTimeout(() => { target.style.outline = ''; }, 1800);
   }
 }
 
@@ -398,6 +414,21 @@ function bindControls() {
     cards.forEach(card => card.classList.toggle('open', shouldExpand));
     updateToggleButton();
   });
+
+  document.getElementById('resetFilters')?.addEventListener('click', () => {
+    resetFiltersToDefault();
+    render();
+  });
+
+  const backToTopBtn = document.getElementById('backToTop');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      backToTopBtn.style.display = window.scrollY > 400 ? 'inline-flex' : 'none';
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 }
 
 bindControls();
