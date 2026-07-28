@@ -66,7 +66,7 @@
     top:0;
     z-index:5;
   }
-  .field{ display:flex; flex-direction:column; gap:4px; }
+  .field{ display:flex; flex-direction:column; gap:4px; min-width:0; }
   .field label{ font-size:0.72rem; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:0.03em; }
   .field input, .field select{
     border:1px solid var(--line);
@@ -78,7 +78,7 @@
     background:#fff;
   }
   .field input:focus, .field select:focus{ outline:2px solid var(--slate); outline-offset:1px; }
-  #search{ min-width:260px; flex:1; }
+  #search{ width:100%; min-width:260px; flex:1 1 auto; }
   .toggle-group{ display:flex; border:1px solid var(--line); border-radius:6px; overflow:hidden; }
   .toggle-group button{
     border:none; background:#fff; padding:8px 12px; font-size:0.85rem; cursor:pointer; color:var(--muted);
@@ -142,6 +142,36 @@
     transition:transform .15s ease, border-color .15s ease, background .15s ease;
   }
   .expand-toggle:hover{ transform:translateY(-1px); border-color:var(--slate); background:#F8FBFF; }
+
+  .search-wrapper{ position:relative; width:100%; }
+  .suggestions{
+    position:absolute;
+    top:calc(100% + 4px);
+    left:0; right:0;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:8px;
+    box-shadow:0 8px 20px rgba(15,42,74,0.12);
+    max-height:320px;
+    overflow-y:auto;
+    z-index:20;
+    display:none;
+  }
+  .suggestions.open{ display:block; }
+  .suggestion-item{
+    padding:9px 12px;
+    font-size:0.87rem;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .suggestion-item:last-child{ border-bottom:none; }
+  .suggestion-item:hover, .suggestion-item.highlighted{ background:#EEF3F8; }
+  .suggestion-item mark{ background:var(--amber-bg); color:var(--amber); font-weight:650; border-radius:2px; }
+  .suggestion-tag{ font-size:0.72rem; color:var(--muted); flex-shrink:0; white-space:nowrap; }
   .app-header{
     display:flex;
     justify-content:space-between;
@@ -175,12 +205,12 @@
 
 <header class="app-header">
   <div>
-    <h1>Štatúty súťaží a akcií - vyhľadávač</h1>
+    <h1>Štatúty súťaží a akcií - vyhľadávač <span style="opacity:.7; font-weight:500;">(testovacia verzia)</span></h1>
     <p>Interný nástroj pre zamestnancov ČSOB · Viktória Tibenská · zdroj:
       <a href="https://www.csob.sk/dolezite-dokumenty/statuty-sutazi" target="_blank" rel="noopener">csob.sk/dolezite-dokumenty/statuty-sutazi</a>
     </p>
   </div>
-  <a href="features-testing.html" class="header-nav-link">🧪 Testovacia verzia →</a>
+  <a href="index.html" class="header-nav-link">← Späť na produkčnú verziu</a>
 </header>
 
 <div class="disclaimer">
@@ -190,7 +220,10 @@
 <div class="controls">
   <div class="field" style="flex:1;">
     <label for="search">Hľadať</label>
-    <input id="search" type="text" placeholder="napr. 50 eur nový účet, refinancovanie hypotéky...">
+    <div class="search-wrapper">
+      <input id="search" type="text" autocomplete="off" placeholder="napr. 50 eur nový účet, refinancovanie hypotéky...">
+      <div id="suggestions" class="suggestions" role="listbox"></div>
+    </div>
   </div>
   <div class="field">
     <label for="category">Kategória</label>
@@ -220,6 +253,8 @@
 <script>
 let DATA = [];
 let allCategories = [];
+let SUGGESTION_POOL = [];
+let highlightedSuggestionIndex = -1;
 
 const EXPAND_TEXT = 'Rozbaliť všetko';
 const COLLAPSE_TEXT = 'Zbaliť všetko';
@@ -265,6 +300,7 @@ async function loadData() {
     DATA = await response.json();
     allCategories = Array.from(new Set(DATA.flatMap(item => (item.categories || ['Ostatné'])))).sort();
 
+    buildSuggestionPool();
     populateCategoryOptions();
     render();
   } catch (error) {
@@ -285,17 +321,110 @@ function populateCategoryOptions() {
   });
 }
 
+function buildSuggestionPool() {
+  const seen = new Set();
+  const pool = [];
+  DATA.forEach(item => {
+    const title = item.short_title || item.title;
+    if (title) {
+      const key = 'n:' + title.toLowerCase();
+      if (!seen.has(key)) { seen.add(key); pool.push({ text: title, tag: 'názov akcie' }); }
+    }
+    (item.search_keywords || []).forEach(kw => {
+      if (!kw) return;
+      const key = 'k:' + kw.toLowerCase();
+      if (!seen.has(key)) { seen.add(key); pool.push({ text: kw, tag: 'kľúčové slovo' }); }
+    });
+  });
+  SUGGESTION_POOL = pool;
+}
+
+function getSuggestions(query) {
+  const normalizedQuery = stripDiacritics(query.trim().toLowerCase());
+  if (!normalizedQuery) return [];
+  return SUGGESTION_POOL
+    .filter(s => stripDiacritics(s.text.toLowerCase()).includes(normalizedQuery))
+    .slice(0, 8);
+}
+
+function highlightMatch(text, query) {
+  const normalizedText = stripDiacritics(text.toLowerCase());
+  const normalizedQuery = stripDiacritics(query.trim().toLowerCase());
+  const idx = normalizedText.indexOf(normalizedQuery);
+  if (idx === -1 || !normalizedQuery) return escapeHtml(text);
+  const before = text.slice(0, idx);
+  const match = text.slice(idx, idx + normalizedQuery.length);
+  const after = text.slice(idx + normalizedQuery.length);
+  return `${escapeHtml(before)}<mark>${escapeHtml(match)}</mark>${escapeHtml(after)}`;
+}
+
+function renderSuggestions(query) {
+  const box = document.getElementById('suggestions');
+  const suggestions = getSuggestions(query);
+  highlightedSuggestionIndex = -1;
+
+  if (!suggestions.length) {
+    box.classList.remove('open');
+    box.innerHTML = '';
+    return;
+  }
+
+  box.innerHTML = suggestions.map((s, i) => `
+    <div class="suggestion-item" data-index="${i}" data-text="${escapeHtml(s.text)}" role="option">
+      <span>${highlightMatch(s.text, query)}</span>
+      <span class="suggestion-tag">${escapeHtml(s.tag)}</span>
+    </div>
+  `).join('');
+  box.classList.add('open');
+
+  box.querySelectorAll('.suggestion-item').forEach(el => {
+    // mousedown namiesto click - predbehne blur event na search inpute
+    el.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      selectSuggestion(el.dataset.text);
+    });
+  });
+}
+
+function selectSuggestion(text) {
+  const input = document.getElementById('search');
+  input.value = text;
+  closeSuggestions();
+  render();
+}
+
+function closeSuggestions() {
+  const box = document.getElementById('suggestions');
+  box.classList.remove('open');
+  box.innerHTML = '';
+  highlightedSuggestionIndex = -1;
+}
+
+function moveSuggestionHighlight(delta) {
+  const box = document.getElementById('suggestions');
+  const items = Array.from(box.querySelectorAll('.suggestion-item'));
+  if (!items.length) return;
+  items[highlightedSuggestionIndex]?.classList.remove('highlighted');
+  highlightedSuggestionIndex = (highlightedSuggestionIndex + delta + items.length) % items.length;
+  items[highlightedSuggestionIndex].classList.add('highlighted');
+  items[highlightedSuggestionIndex].scrollIntoView({ block: 'nearest' });
+}
+
 function getFilteredData() {
   const query = (document.getElementById('search').value || '').trim().toLowerCase();
   const normalizedQuery = stripDiacritics(query);
+  const queryWords = normalizedQuery.split(/\s+/).filter(Boolean);
   const category = document.getElementById('category').value;
   const asOfDate = document.getElementById('asOfDate').value;
   const status = document.querySelector('#statusToggle .active')?.dataset.val || 'all';
 
   return DATA.filter(item => {
-    const text = `${item.title || ''} ${item.summary || ''} ${item.reward || ''} ${(item.categories || []).join(' ')} ${(item.search_keywords || []).join(' ')}`;
+    const text = `${item.title || ''} ${item.short_title || ''} ${item.summary || ''} ${item.reward || ''} ${(item.categories || []).join(' ')} ${(item.search_keywords || []).join(' ')} ${item.eligibility || ''}`;
     const normalizedText = stripDiacritics(text.toLowerCase());
-    const matchesQuery = !normalizedQuery || normalizedText.includes(normalizedQuery);
+    // Každé slovo z dopytu musí byť NIEKDE v texte (nezáleží na poradí/susedstve),
+    // namiesto vyžadovania presnej súvislej frázy - inak napr. "70 nový účet"
+    // nenájde štatút, kde je to isté povedané iným slovosledom/znením.
+    const matchesQuery = queryWords.every(word => normalizedText.includes(word));
     const matchesCategory = !category || (item.categories || []).includes(category);
     const matchesStatus = status === 'all' || statusOf(item) === status;
     const matchesDate = !asOfDate || (
@@ -309,6 +438,7 @@ function getFilteredData() {
 
 function resetFiltersToDefault() {
   document.getElementById('search').value = '';
+  closeSuggestions();
   document.getElementById('category').value = '';
   document.getElementById('asOfDate').value = '';
   document.querySelectorAll('#statusToggle button').forEach(btn => btn.classList.remove('active'));
@@ -427,7 +557,42 @@ function render() {
 }
 
 function bindControls() {
-  document.getElementById('search').addEventListener('input', render);
+  const searchInput = document.getElementById('search');
+
+  searchInput.addEventListener('input', () => {
+    render();
+    renderSuggestions(searchInput.value);
+  });
+
+  searchInput.addEventListener('keydown', (e) => {
+    const items = Array.from(document.querySelectorAll('#suggestions .suggestion-item'));
+    if (e.key === 'ArrowDown' && items.length) {
+      e.preventDefault();
+      moveSuggestionHighlight(1);
+    } else if (e.key === 'ArrowUp' && items.length) {
+      e.preventDefault();
+      moveSuggestionHighlight(-1);
+    } else if (e.key === 'Enter') {
+      if (highlightedSuggestionIndex >= 0 && items[highlightedSuggestionIndex]) {
+        e.preventDefault();
+        selectSuggestion(items[highlightedSuggestionIndex].dataset.text);
+      } else {
+        closeSuggestions();
+      }
+    } else if (e.key === 'Escape') {
+      closeSuggestions();
+    }
+  });
+
+  searchInput.addEventListener('focus', () => {
+    if (searchInput.value.trim()) renderSuggestions(searchInput.value);
+  });
+
+  searchInput.addEventListener('blur', () => {
+    // krátke oneskorenie, nech mousedown na položke stihne prebehnúť pred zatvorením
+    setTimeout(closeSuggestions, 100);
+  });
+
   document.getElementById('category').addEventListener('change', render);
   document.getElementById('asOfDate').addEventListener('change', render);
 
