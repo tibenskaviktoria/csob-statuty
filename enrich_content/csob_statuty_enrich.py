@@ -53,6 +53,15 @@ LIMIT = None
 # FORCE_TITLES: podreťazce názvov, ktoré sa MUSIA enrichnúť nech je hash
 # akýkoľvek (napr. chceš prehnať konkrétny štatút znova po úprave promptu).
 FORCE_TITLES: list[str] = []
+
+# Bezpečnostná poistka: ak diff-detekcia zrazu vyhodnotí ako "na spracovanie"
+# viac záznamov, než je tento limit, skript sa ZASTAVÍ BEZ VOLANIA API a
+# skončí chybou namiesto toho, aby ticho minul kredit na niečo, čo vyzerá
+# ako bug (napr. chýbajúci content_hash v predošlom výstupe - presne to,
+# čo sa stalo pri prvom behu v CI). V CI to zastaví celý workflow PRED
+# commitom. Ak naozaj chceš prehnať veľa záznamov naraz úmyselne, over si
+# dôvod (napr. zmena promptu) a dočasne toto číslo zvýš.
+MAX_AUTO_PROCESS = 5
 # ---------------------------------------------------------------------------
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -202,6 +211,18 @@ def main():
     print(f"Aktuálne na stránke: {len(current_raw)} | "
           f"na (pre)spracovanie: {len(to_process)} | "
           f"zrušené: {len(removed)}")
+
+    if len(to_process) > MAX_AUTO_PROCESS:
+        print(
+            f"\nSTOP: na spracovanie je {len(to_process)} záznamov, čo prekračuje "
+            f"MAX_AUTO_PROCESS ({MAX_AUTO_PROCESS}). Toto zvyčajne znamená, že diff "
+            f"voči predošlému statuty_enriched.json nefunguje ako má (napr. chýba "
+            f"content_hash v repe, alebo sa nesynchronizoval commit). "
+            f"Nič sa nezavolalo cez API, žiadny kredit sa neminul.\n"
+            f"Ak je toto zámer (napr. hromadná zmena promptu), tak dočasne zvýš "
+            f"MAX_AUTO_PROCESS v skripte."
+        )
+        raise SystemExit(1)
 
     to_process_urls = {r["url"] for r in to_process}
     newly_by_url = {}

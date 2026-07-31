@@ -25,12 +25,15 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 1) Scrape the current state of the csob.sk
-        run: python web_scraper/web_scraper.py
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python -u web_scraper/web_scraper.py
 
       - name: 2) Enrich only the new or changed statutes (using Anthropic API)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python enrich_content/csob_statuty_enrich.py
+          PYTHONUNBUFFERED: "1"
+        run: python -u enrich_content/csob_statuty_enrich.py
 
       - name: Commit and push changes (if any)
         run: |
