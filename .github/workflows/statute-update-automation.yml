@@ -39,7 +39,15 @@ jobs:
         run: |
           git config user.name "statuty-bot"
           git config user.email "statuty-bot@users.noreply.github.com"
-          git add web_scraper/statuty_raw.json enrich_content/statuty_enriched.json enrich_content/statuty_removed_log.json
+
+          git add web_scraper/statuty_raw.json enrich_content/statuty_enriched.json
+          
+          # statuty_removed_log.json vzniká len vtedy, keď bol nejaký štatút zrušený - "git add" na neexistujúci súbor by 
+          # inak zhodil celý krok (bash -e v GitHub Actions zastaví krok pri prvom nenulovom exit kóde).
+          if [ -f enrich_content/statuty_removed_log.json ]; then
+            git add enrich_content/statuty_removed_log.json
+          fi
+          
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
