@@ -18,10 +18,15 @@ import json
 import re
 import time
 from dataclasses import dataclass, asdict
+from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+
+# Ukotvené na priečinok tohto súboru, nie na aktuálny pracovný priečinok -
+# dôležité pre GitHub Actions, kde sa skripty typicky spúšťajú z koreňa repa.
+OUTPUT_PATH = Path(__file__).resolve().parent / "statuty_raw.json"
 
 BASE_URL = "https://www.csob.sk"
 LISTING_URLS = [
@@ -138,10 +143,10 @@ def main():
         time.sleep(DELAY_SECONDS)
 
     output = [asdict(s) for s in statutes]
-    with open("statuty_raw.json", "w", encoding="utf-8") as f:
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\nDone. Saved statuty_raw.json ({len(output)} records).")
+    print(f"\nDone. Saved {OUTPUT_PATH} ({len(output)} records).")
 
 
 if __name__ == "__main__":

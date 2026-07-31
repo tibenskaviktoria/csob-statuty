@@ -1,30 +1,36 @@
 """
-Obohatenie surových štatútov (statuty_raw.json) cez Claude API - v2.
+Obohatenie surových štatútov (statuty_raw.json) cez Claude API - v3.
 
-Zmeny oproti v1:
-  - Používa Anthropic "tool use" namiesto voľného textového JSON výstupu.
-    Model je donútený vyplniť presne definovanú schému cez tool_choice,
-    takže odpadá krehké parsovanie textu a chyby typu "model pridal text
-    navyše" alebo "nedodržaná štruktúra" (čo sme videli pri lokálnom modeli
-    aj pri 2 zlyhaniach v predošlom behu - jeden bol spôsobený tým, že názov
-    štatútu obsahoval rovnú úvodzovku ", ktorá pri voľnom texte rozbila JSON).
-  - "categories" je teraz zoznam (1-2 položky) - niektoré štatúty sa týkajú
-    viacerých oblastí naraz (napr. poistenie + účet).
-  - "short_title" má prísnejšiu inštrukciu: musí byť vypovedajúci o obsahu
-    aj vtedy, keď je marketingový názov nič nehovoriaci (napr. "Odporúčate
-    byť smart? IV", "Perspektiv Plus 5 - Svetový výber").
-  - "referenced_statutes": zoznam presných citovaných názvov iných štatútov,
-    na ktoré sa text odvoláva (napr. "Pozvaní sa riadia štatútom
-    „Každý nákup je investíciou“") - po behu sa tieto názvy priradia
-    k reálnym URL v post-processing kroku nižšie.
-  - Voliteľné spracovanie len podmnožiny (LIMIT / ONLY_TITLES) a zlúčenie
-    výsledkov s už existujúcim enriched súborom podľa URL, aby sa dal
-    projekt spracovávať postupne bez straty predošlej práce.
+Zmeny oproti v2 (dôvod: príprava na automatizáciu cez cron/GitHub Actions):
+
+  1. AUTOMATICKÁ DETEKCIA ZMIEN namiesto ručného LIMIT/ONLY_TITLES.
+     Každý raw záznam má teraz content_hash (SHA256 textu). Skript porovná
+     hash oproti poslednému behu (uloženému v statuty_enriched.json) a
+     enrichne len záznamy, ktoré sú nové alebo majú iný hash (napr. predĺžená
+     platnosť, doplnená podmienka a pod.). LIMIT/ONLY_TITLES ostávajú ako
+     voliteľné ručné prepnutie pre výnimočné prípady (napr. chceš prehnať
+     všetko znova po zmene promptu), ale nie sú to už primárny mechanizmus.
+
+  2. SELF-REFERENTIAL MERGE. Skript teraz merguje voči SVOJMU VLASTNÉMU
+     predošlému výstupu (statuty_enriched.json), nie voči zamrznutému
+     statuty_anthropic_enriched.json. To bolo potrebné opraviť - inak sa
+     pri opakovanom behu vždy vraciame k starému snapshotu a strácame
+     medzičasom pridané dáta.
+
+  3. OPRAVENÉ PORADIE. Predošlá verzia stavala finálny zoznam ako
+     list(merged.values()) - to pri prírastkovom behu posúva nové záznamy
+     na koniec namiesto na ich skutočnú pozíciu na stránke. Teraz sa
+     finálny zoznam vždy poskladá v poradí AKTUÁLNEHO raw scrapu.
+
+  4. ZRUŠENÉ ŠTATÚTY. Ak štatút zmizne z aktuálneho scrapu (stiahnutý
+     z webu), vypadne aj z aktívneho statuty_enriched.json a zaloguje sa
+     do statuty_removed_log.json pre audit (nemaže sa ticho bez stopy).
 
 Vyžaduje: pip install anthropic --break-system-packages
 Očakáva premennú prostredia ANTHROPIC_API_KEY.
 """
 
+import hashlib
 import json
 import os
 import time
@@ -34,26 +40,25 @@ from anthropic import Anthropic
 
 client = Anthropic()
 
-MODEL = "claude-sonnet-5"  # pre túto dávku (zložitejšie/referenčné štatúty) Sonnet
-# Pre bežné doplnkové behy stačí spravidla "claude-haiku-4-5-20251001"
+MODEL = "claude-sonnet-5"
+# Pre bežné doplnkové behy stačí spravidla "claude-haiku-4-5-20251001" -
+# pri automatizovaných behoch, kde ide typicky o pár zmien denne, je rozdiel
+# v cene zanedbateľný, tak necháme presnejší Sonnet.
 
-# --- Konfigurácia rozsahu spracovania -------------------------------------
-# LIMIT: spracuje len prvých N záznamov zo statuty_raw.json (None = všetky).
-# Stránka radí štatúty od najnovších, takže LIMIT=40 = 40 najaktuálnejších.
-LIMIT = 40
+# --- Voliteľné ručné prepnutie (zriedka potrebné) --------------------------
+# LIMIT: ak nastavené, obmedzí AJ automaticky detegované zmeny na prvých N
+# záznamov zo statuty_raw.json (None = bez obmedzenia).
+LIMIT = None
 
-# ONLY_TITLES: podreťazce názvov, ktoré sa MUSIA spracovať bez ohľadu na LIMIT
-# (napr. predtým zlyhané záznamy).
-ONLY_TITLES = [
-    "Moja garáž",
-    "Preleťte do ČSOB 2025",
-]
+# FORCE_TITLES: podreťazce názvov, ktoré sa MUSIA enrichnúť nech je hash
+# akýkoľvek (napr. chceš prehnať konkrétny štatút znova po úprave promptu).
+FORCE_TITLES: list[str] = []
+# ---------------------------------------------------------------------------
 
 BASE_DIR = Path(__file__).resolve().parent
 RAW_PATH = BASE_DIR.parent / "web_scraper" / "statuty_raw.json"
-EXISTING_ENRICHED_PATH = BASE_DIR / "statuty_anthropic_enriched.json"  # ak existuje, zlúči sa
-OUTPUT_PATH = BASE_DIR / "statuty_enriched.json"
-# ---------------------------------------------------------------------------
+OUTPUT_PATH = BASE_DIR / "statuty_enriched.json"          # aj vstup aj výstup (self-referential)
+REMOVED_LOG_PATH = BASE_DIR / "statuty_removed_log.json"
 
 SYSTEM_PROMPT = """Si asistent pre pracovníkov infolinky slovenskej banky ČSOB.
 Dostaneš text právneho štatútu súťaže/akcie. Tvojou úlohou je vytiahnuť z neho
@@ -66,21 +71,14 @@ Pravidlá:
 - Ak dátum/suma nie je v texte jednoznačne uvedená, daj null - NEVYMÝŠĽAJ si.
 - NIKDY nevynechaj konkrétnu sumu odmeny, ak je v texte uvedená.
 - "short_title" NESMIE byť len skopírovaný marketingový názov, ak ten nič
-  nehovorí o obsahu (napr. "Odporúčate byť smart? IV", "Perspektiv Plus 5 -
-  Svetový výber"). Namiesto toho napíš krátky, vecný názov, ktorý hneď
-  napovie, o čo ide (napr. "Odmena za odporučenie nového klienta",
-  "Fond Perspektiv Plus 5 - globálne akcie"). Ak marketingový názov už
-  sám osebe je vypovedajúci, môžeš ho ponechať/mierne skrátiť.
+  nehovorí o obsahu. Napíš krátky, vecný názov, ktorý hneď napovie, o čo ide.
 - "categories" - vyber 1 až 2 z: "Účty a platby", "Úvery a lízing",
-  "Investovanie", "Poistenie", "Hypotéky", "Karty", "Ostatné". Ak sa akcia
-  týka viacerých oblastí súčasne (napr. podmienkou je poistenie AJ účet),
-  priraď obe.
-- "referenced_statutes" - ak text spomína, že sa účastník/podmienky riadia
-  INÝM štatútom (napr. "riadi sa štatútom „Každý nákup je investíciou“"),
-  ulož sem presný citovaný názov toho druhého štatútu presne tak, ako je
-  napísaný v texte (s úvodzovkami vnútri reťazca je to v poriadku, tool use
-  to spracuje správne). Ak žiadny taký odkaz nie je, vráť prázdny zoznam.
+  "Investovanie", "Poistenie", "Hypotéky", "Karty", "Ostatné".
+- "referenced_statutes" - presné citované názvy iných štatútov, na ktoré sa
+  text odvoláva. Prázdny zoznam, ak žiadne nie sú.
 - "search_keywords" napíš tak, ako by to povedal bežný klient telefonicky.
+- Ak text spomína, že ide o aktualizáciu/dodatok/predĺženie predchádzajúcej
+  verzie akcie, uveď to v "summary".
 """
 
 TOOL_SCHEMA = {
@@ -121,9 +119,13 @@ TOOL_SCHEMA = {
 }
 
 
+def content_hash(text: str) -> str:
+    return hashlib.sha256((text or "").encode("utf-8")).hexdigest()[:16]
+
+
 def enrich_one(statute: dict, retries: int = 2) -> dict:
     last_err: Exception | None = None
-    for attempt in range(retries):
+    for _ in range(retries):
         try:
             resp = client.messages.create(
                 model=MODEL,
@@ -133,8 +135,8 @@ def enrich_one(statute: dict, retries: int = 2) -> dict:
                 tool_choice={"type": "tool", "name": "extract_statut_info"},
                 messages=[
                     {
-                        "role": "user",
-                        "content": f"NÁZOV: {statute['title']}\n\nTEXT ŠTATÚTU:\n{statute['raw_text']}",
+                    "role": "user",
+                    "content": f"NÁZOV: {statute['title']}\n\nTEXT ŠTATÚTU:\n{statute['raw_text']}",
                     }
                 ],
             )
@@ -143,13 +145,10 @@ def enrich_one(statute: dict, retries: int = 2) -> dict:
         except Exception as e:
             last_err = e
             time.sleep(1.5)
-    if last_err is not None:
-        raise last_err
-    raise RuntimeError("Failed to enrich statute after retries")
+    raise last_err  # type: ignore[misc]
 
 
 def resolve_references(enriched: list[dict]) -> None:
-    """Skús priradiť referenced_statutes k reálnym URL v rámci datasetu."""
     by_title = {e["title"]: e for e in enriched}
     titles = list(by_title.keys())
 
@@ -174,33 +173,56 @@ def resolve_references(enriched: list[dict]) -> None:
 
 def main():
     with open(RAW_PATH, "r", encoding="utf-8") as f:
-        all_statutes = json.load(f)
+        current_raw = json.load(f)
 
-    to_process = list(all_statutes[:LIMIT]) if LIMIT else list(all_statutes)
-    already_titles = {s["title"] for s in to_process}
-    for s in all_statutes:
-        if s["title"] not in already_titles and any(t in s["title"] for t in ONLY_TITLES):
-            to_process.append(s)
+    for item in current_raw:
+        item["content_hash"] = content_hash(item.get("raw_text", ""))
 
-    print(f"Spracujem {len(to_process)} z {len(all_statutes)} záznamov.")
+    previous_enriched = []
+    if OUTPUT_PATH.exists():
+        with open(OUTPUT_PATH, "r", encoding="utf-8") as f:
+            previous_enriched = json.load(f)
+    previous_by_url = {e["url"]: e for e in previous_enriched}
 
-    newly_enriched = []
+    current_urls = {r["url"] for r in current_raw}
+    removed = [e for url, e in previous_by_url.items() if url not in current_urls]
+
+    to_process = []
+    for r in current_raw:
+        prev = previous_by_url.get(r["url"])
+        is_new = prev is None
+        is_changed = prev is not None and prev.get("content_hash") != r["content_hash"]
+        is_forced = any(t in r["title"] for t in FORCE_TITLES)
+        if is_new or is_changed or is_forced:
+            to_process.append(r)
+
+    if LIMIT:
+        to_process = to_process[:LIMIT]
+
+    print(f"Aktuálne na stránke: {len(current_raw)} | "
+          f"na (pre)spracovanie: {len(to_process)} | "
+          f"zrušené: {len(removed)}")
+
+    to_process_urls = {r["url"] for r in to_process}
+    newly_by_url = {}
     for i, statute in enumerate(to_process, 1):
         print(f"[{i}/{len(to_process)}] {statute['title'][:70]}...")
         try:
             data = enrich_one(statute)
-            newly_enriched.append({
+            newly_by_url[statute["url"]] = {
                 "title": statute["title"],
                 "url": statute["url"],
                 "source": statute.get("source", "aktualne"),
+                "content_hash": statute["content_hash"],
                 **data,
-            })
+            }
         except Exception as e:
             print(f"  CHYBA aj po opakovaní: {e}")
-            newly_enriched.append({
+            newly_by_url[statute["url"]] = {
                 "title": statute["title"],
                 "url": statute["url"],
                 "source": statute.get("source", "aktualne"),
+                "content_hash": statute["content_hash"],
                 "short_title": statute["title"],
                 "summary": "(automatické spracovanie zlyhalo, pozri originál)",
                 "eligibility": None, "conditions": [], "reward": None,
@@ -208,32 +230,38 @@ def main():
                 "payout_deadline": None, "payout_note": None,
                 "categories": ["Ostatné"], "search_keywords": [],
                 "referenced_statutes": [],
-            })
+            }
         time.sleep(0.3)
 
-    # Zlúčenie s existujúcim súborom (podľa URL), ak existuje.
-    merged = {}
-    if os.path.exists(EXISTING_ENRICHED_PATH):
-        with open(EXISTING_ENRICHED_PATH, "r", encoding="utf-8") as f:
-            existing = json.load(f)
-        for e in existing:
-            # zabezpeč konzistentnú štruktúru so starými záznamami (category -> categories)
-            if "categories" not in e and "category" in e:
-                e["categories"] = [e.pop("category")]
-            e.setdefault("referenced_statutes", [])
-            merged[e["url"]] = e
+    # Finálny zoznam VŽDY v poradí aktuálneho raw scrapu - toto garantuje
+    # zhodu s poradím na oficiálnej stránke bez ohľadu na to, čo/kedy sa
+    # prespracovalo.
+    final_enriched = []
+    for r in current_raw:
+        if r["url"] in to_process_urls:
+            final_enriched.append(newly_by_url[r["url"]])
+        else:
+            final_enriched.append(previous_by_url[r["url"]])
 
-    for e in newly_enriched:
-        merged[e["url"]] = e  # nové/prepracované záznamy prepíšu staré
+    resolve_references(final_enriched)
 
-    final = list(merged.values())
-    resolve_references(final)
+    if removed:
+        removed_log = []
+        if REMOVED_LOG_PATH.exists():
+            removed_log = json.loads(REMOVED_LOG_PATH.read_text(encoding="utf-8"))
+        for e in removed:
+            removed_log.append({"url": e["url"], "title": e["title"]})
+        REMOVED_LOG_PATH.write_text(
+            json.dumps(removed_log, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"  ({len(removed)} zrušených záznamov zalogovaných do {REMOVED_LOG_PATH.name})")
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(final, f, ensure_ascii=False, indent=2)
+        json.dump(final_enriched, f, ensure_ascii=False, indent=2)
 
-    print(f"\nHotovo. {OUTPUT_PATH}: {len(final)} záznamov spolu "
-          f"({len(newly_enriched)} nových/prepracovaných).")
+    changes = len(to_process) + len(removed)
+    print(f"\nHotovo. {OUTPUT_PATH.name}: {len(final_enriched)} záznamov.")
+    print(f"ZMENY: {changes}")  # CI podľa tohto riadku rozhodne, či commitnúť
 
 
 if __name__ == "__main__":
