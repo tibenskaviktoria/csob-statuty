@@ -613,38 +613,28 @@
     "title": "Štatút akcie „Preneste si podnikanie do SMART sveta ČSOB 2026“",
     "url": "https://www.csob.sk/-/statut-akcie-preneste-si-podnikanie-do-smart-sveta-csob-2026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
-    "short_title": "Odmena 50 € za presun podnikateľského účtu do ČSOB",
-    "summary": "Akcia pre podnikateľov (SZČO a firmy do 10 zamestnancov a obratom do 2 mil. EUR), ktorí si presunú podnikateľský účet z inej banky do ČSOB. Podmienkou je podanie žiadosti o presun platobného účtu (vrátane zrušenia pôvodného účtu) osobne na pobočke, a to pre vybrané ČSOB podnikateľské balíky. Za splnenie podmienok klient získa 50 €.",
-    "eligibility": "Fyzické osoby - podnikatelia a právnické osoby s menej ako 10 zamestnancami a ročným obratom/bilanciou nižšou ako 2 milióny EUR, ktorí sú klientmi ČSOB k 14.4.2026 alebo sa stanú novými klientmi ČSOB od 15.4.2026 do 31.12.2026.",
-    "conditions": [
-      "Byť klientom ČSOB k 14.04.2026 alebo stať sa novým klientom ČSOB od 15.04.2026 do 31.12.2026",
-      "Od 15.04.2026 do 31.12.2026 osobne na pobočke ČSOB požiadať o presun platobného účtu z inej banky so sídlom v SR do ČSOB",
-      "Žiadosť sa musí týkať balíkov ČSOB Podnikateľské konto, ČSOB Podnikateľské konto Elektron alebo ČSOB Podnikateľské konto Komplet",
-      "V žiadosti o presun zároveň požiadať o zrušenie účtu v pôvodnej banke",
-      "V čase vyhodnotenia nesmie byť evidované storno žiadosti o presun účtu",
-      "Presúvaný účet nesmie byť vedený v 365.bank alebo Poštovej banke (tí sú z akcie vylúčení)",
-      "V čase vyhodnotenia a vyplatenia odmeny musí byť ČSOB účet naďalej otvorený"
-    ],
-    "reward": "Jednorazové pripísanie 50 EUR na presunutý ČSOB účet",
-    "reward_amount_eur": 50,
-    "date_from": "2026-04-15",
-    "date_to": "2026-12-31",
-    "payout_deadline": "2027-02-28",
-    "payout_note": "Vyhodnotenie a vyplácanie prebieha mesačne od 22.5.2026 do 28.2.2027 - vyhodnotenie do 22. dňa v mesiaci, odmena pripísaná do konca daného mesiaca. Ak klient presunie viac účtov, odmena sa vyplatí len za jeden - ten, ktorého žiadosť bola doručená skôr (pri rovnakom dni za účet založený ako prvý).",
+    "content_hash": "e3b0c44298fc1c14",
+    "short_title": "Zvýhodnenie pri presune podnikateľského účtu do ČSOB",
+    "summary": "Štatút akcie na podporu presunu podnikania (podnikateľského účtu/produktov) do ČSOB. Presný text štatútu nebol poskytnutý, preto konkrétne podmienky, odmena a dátumy nie sú k dispozícii.",
+    "eligibility": null,
+    "conditions": [],
+    "reward": "Neuvedené - text štatútu nebol dodaný",
+    "reward_amount_eur": null,
+    "date_from": null,
+    "date_to": null,
+    "payout_deadline": null,
+    "payout_note": "Informácia o vyplatení odmeny nie je k dispozícii, keďže text štatútu nebol poskytnutý.",
     "categories": [
       "Účty a platby"
     ],
     "search_keywords": [
-      "presun podnikateľského účtu",
-      "odmena za presun účtu",
-      "50 eur za prechod do ČSOB",
-      "podnikateľské konto bonus",
-      "presun účtu z inej banky",
-      "SMART svet ČSOB 2026"
+      "presun podnikania do ČSOB",
+      "SMART svet ČSOB 2026",
+      "podnikateľský účet akcia",
+      "presunúť si firmu do ČSOB"
     ],
     "referenced_statutes": [],
-    "referenced_statutes_resolved": [],
-    "content_hash": "534ff9fd893f04d2"
+    "referenced_statutes_resolved": []
   },
   {
     "title": "Štatút akcie „Každý nákup je investíciou“",
