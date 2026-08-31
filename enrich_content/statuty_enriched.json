@@ -613,25 +613,36 @@
     "title": "Štatút akcie „Preneste si podnikanie do SMART sveta ČSOB 2026“",
     "url": "https://www.csob.sk/-/statut-akcie-preneste-si-podnikanie-do-smart-sveta-csob-2026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
-    "content_hash": "e3b0c44298fc1c14",
-    "short_title": "Zvýhodnenie pri presune podnikateľského účtu do ČSOB",
-    "summary": "Štatút akcie na podporu presunu podnikania (podnikateľského účtu/produktov) do ČSOB. Presný text štatútu nebol poskytnutý, preto konkrétne podmienky, odmena a dátumy nie sú k dispozícii.",
-    "eligibility": null,
-    "conditions": [],
-    "reward": "Neuvedené - text štatútu nebol dodaný",
-    "reward_amount_eur": null,
-    "date_from": null,
-    "date_to": null,
-    "payout_deadline": null,
-    "payout_note": "Informácia o vyplatení odmeny nie je k dispozícii, keďže text štatútu nebol poskytnutý.",
+    "content_hash": "534ff9fd893f04d2",
+    "short_title": "Odmena 50 € za presun podnikateľského účtu do ČSOB",
+    "summary": "Akcia pre podnikateľov (SZČO a firmy do 10 zamestnancov s obratom do 2 mil. EUR), ktorí presunú svoj podnikateľský platobný účet z inej banky do ČSOB. Za presun účtu formou žiadosti o presun platobného účtu (vrátane zrušenia pôvodného účtu) a založenie vybraného balíka ČSOB podnikateľského konta získajú jednorazovú odmenu 50 EUR.",
+    "eligibility": "Fyzické osoby - podnikatelia a právnické osoby s menej ako 10 zamestnancami a ročným obratom/obchodnou bilanciou nižšou ako 2 milióny EUR, ktorí sú klientmi ČSOB k 14.04.2026 alebo sa stanú novými klientmi ČSOB v období od 15.04.2026 do 31.12.2026.",
+    "conditions": [
+      "Osobne v pobočke ČSOB požiadať v období od 15.04.2026 do 31.12.2026 o presun platobného účtu z inej banky so sídlom v SR do ČSOB",
+      "Presun sa musí týkať balíka ČSOB Podnikateľské konto, ČSOB Podnikateľské konto Elektron alebo ČSOB Podnikateľské konto Komplet",
+      "V žiadosti o presun zároveň požiadať o zrušenie účtu u pôvodnej banky",
+      "V čase vyhodnotenia akcie nesmie byť evidované storno žiadosti o presun účtu",
+      "Presúvaný účet nesmie byť vedený v 365.bank ani Poštovej banke",
+      "V čase vyhodnotenia a poskytnutia odmeny musí byť ČSOB účet naďalej otvorený",
+      "Pri presune viacerých účtov sa odmena poskytne len za jeden - ten, ktorého žiadosť bola doručená skôr, prípadne ktorý bol založený ako prvý"
+    ],
+    "reward": "Jednorazové pripísanie 50 EUR na ČSOB účet klienta",
+    "reward_amount_eur": 50,
+    "date_from": "2026-04-15",
+    "date_to": "2026-12-31",
+    "payout_deadline": "2027-02-28",
+    "payout_note": "Vyhodnocovanie prebieha mesačne od 22.05.2026 do 28.02.2027, vždy do 22. dňa v mesiaci sa vyhodnotí splnenie podmienok a odmena sa pripíše do konca daného mesiaca.",
     "categories": [
       "Účty a platby"
     ],
     "search_keywords": [
-      "presun podnikania do ČSOB",
+      "presun účtu do ČSOB",
+      "50 eur za presun podnikateľského účtu",
+      "podnikateľské konto ČSOB odmena",
+      "presun podnikania",
       "SMART svet ČSOB 2026",
-      "podnikateľský účet akcia",
-      "presunúť si firmu do ČSOB"
+      "presun platobného účtu podnikateľ",
+      "zmena banky podnikateľ odmena"
     ],
     "referenced_statutes": [],
     "referenced_statutes_resolved": []
@@ -3375,39 +3386,6 @@
     "referenced_statutes": [],
     "referenced_statutes_resolved": [],
     "content_hash": "a263c9de4baf042c"
-  },
-  {
-    "title": "Štatút akcie „DNA Complex test k životnému poisteniu Vital online“",
-    "url": "https://www.csob.sk/-/statut-akcie-dna-complex-test-k-zivotnemu-poisteniu-vital-online?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-    "source": "aktualne",
-    "short_title": "DNA Complex test k životnému poisteniu Vital online",
-    "summary": "Akcia od ČSOB Poisťovne na odmenu klientov, ktorí si uzatvoria životné poistenie Vital online. Za splnenie podmienok dostanú DNA Complex test v hodnote 349 EUR.",
-    "eligibility": "Fyzické osoby, ktoré si uzatvoria Vital životné poistenie cez www.csob.sk alebo aplikáciu ČSOB SmartBanking. Dospelý variant: minimálne 25 EUR/mesačne, detský variant: minimálne 15 EUR/mesačne. Klient musí uhradiť minimálne 2 splátky poistného a poistenie musí byť v čase poskytnutia benefitu aktívne.",
-    "conditions": [
-      "Uzatvorenie Vital životného poistenia cez www.csob.sk alebo ČSOB SmartBanking počas trvania akcie",
-      "Minimálne poistné 25 EUR/mesačne (dospelý) alebo 15 EUR/mesačne (detský variant)",
-      "Úhrada minimálne 2 splátok poistného",
-      "Poistenie musí byť aktívne v čase poskytnutia odmeny"
-    ],
-    "reward": "DNA Complex test od spoločnosti DNA ERA",
-    "reward_amount_eur": 349,
-    "date_from": "2023-12-11",
-    "date_to": "2026-12-31",
-    "payout_deadline": "2027-05-31",
-    "payout_note": "Odmena sa odovzdáva formou darčekového poukazu zaslaného na e-mail klienta mesačne, najneskôr do konca nasledujúceho mesiaca, v ktorom klient splnil všetky podmienky. Vyhodnocovanie podmienok prebieha mesačne (prvé vyhodnotenie 31.1.2024, posledné 31.5.2027).",
-    "search_keywords": [
-      "DNA test k poisteniu",
-      "bonus k životnému poisteniu Vital",
-      "odmena za poistenie",
-      "DNA Complex test",
-      "Vital online poistenie"
-    ],
-    "categories": [
-      "Poistenie"
-    ],
-    "referenced_statutes": [],
-    "referenced_statutes_resolved": [],
-    "content_hash": "642986ba13b36c12"
   },
   {
     "title": "Štatút akcie „3 splátky sú doma. Vrátime vám ich.“",
