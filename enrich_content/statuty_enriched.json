@@ -74,34 +74,33 @@
     "title": "Štatút akcie - Benefit k životnému poisteniu Vital online",
     "url": "https://www.csob.sk/-/statut-akcie-benefit-k-zivotnemu-poisteniu-vital-online?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
-    "content_hash": "e87f6bc2bf4840bd",
-    "short_title": "Darček za uzatvorenie životného poistenia Vital online",
-    "summary": "Klienti, ktorí si počas trvania akcie uzatvoria životné poistenie Vital cez web csob.sk alebo aplikáciu ČSOB SmartBanking a splnia podmienky (minimálne poistné, úhrada aspoň dvoch splátok, aktívne poistenie), získajú darček - pri dospelom variante e-book o zdravom starnutí, pri detskom variante DNA test.",
-    "eligibility": "Fyzické osoby - poistníci, ktorí počas trvania akcie uzatvoria Vital životné poistenie cez www.csob.sk alebo cez ČSOB SmartBanking. Pri osobách mladších ako 18 rokov je potrebná účasť/konanie zákonného zástupcu.",
+    "content_hash": "1903187f187e3f43",
+    "short_title": "Odmena za uzatvorenie životného poistenia Vital online",
+    "summary": "Akcia odmeňuje klientov, ktorí si cez web csob.sk alebo aplikáciu ČSOB SmartBanking uzatvoria životné poistenie Vital. Pri splnení podmienok (minimálne poistné, uhradenie aspoň dvoch splátok, aktívne poistenie) získa klient pri dospelom variante e-book o dlhovekosti a pri detskom variante DNA test.",
+    "eligibility": "Fyzické osoby - poistníci, ktorí si počas trvania akcie uzatvoria Vital životné poistenie cez web www.csob.sk alebo cez aplikáciu ČSOB SmartBanking. Pri účastníkovi mladšom ako 18 rokov je potrebná účasť/konanie zákonného zástupcu.",
     "conditions": [
-      "Poistenie musí byť uzatvorené v období trvania akcie cez www.csob.sk alebo ČSOB SmartBanking",
-      "Minimálne poistné pri dospelom variante je 25 €/mesačne",
-      "Minimálne poistné pri detskom variante je 15 €/mesačne",
-      "Klient musí uhradiť aspoň dve po sebe idúce splátky poistného",
-      "Poistenie musí byť aktívne v čase poskytnutia odmeny"
+      "Poistenie musí byť uzatvorené v období trvania akcie cez www.csob.sk alebo cez ČSOB SmartBanking",
+      "Minimálne poistné na zmluve: dospelý variant 25 €/mesačne, detský variant 15 €/mesačne",
+      "Klient musí uhradiť aspoň dve po sebe idúce splátky poistného na účet Poisťovne",
+      "Poistenie musí byť v čase poskytnutia benefitu aktívne"
     ],
-    "reward": "Pri dospelom variante e-book '100 receptov dlhovekosti' od MUDr. Borisa Bajera v hodnote 19,90 EUR s DPH. Pri detskom variante DNA Complex test od spoločnosti DNA ERA v hodnote 349 EUR s DPH.",
+    "reward": "Dospelý variant: E-book 100 receptov dlhovekosti od MUDr. Borisa Bajera v hodnote 19,90 EUR s DPH. Detský variant: DNA Complex test od spoločnosti DNA ERA v hodnote 349 EUR s DPH.",
     "reward_amount_eur": 349,
     "date_from": "2026-09-01",
     "date_to": "2026-12-31",
     "payout_deadline": "2027-03-31",
-    "payout_note": "Vyhodnotenie splnenia podmienok prebieha mesačne spätne od začiatku akcie, prvé vyhodnotenie k 01.11.2026, posledné k 31.3.2027. Odmena (link/kód na jej využitie) sa zasiela e-mailom uvedeným pri uzatvorení poistenia, najneskôr do konca mesiaca nasledujúceho po mesiaci splnenia podmienok.",
+    "payout_note": "Vyhodnotenie splnenia podmienok prebieha mesačne spätne od začiatku akcie - prvé vyhodnotenie k 01.11.2026, posledné k 31.3.2027. Odmena (link/kód na jej využitie) sa posiela e-mailom na adresu uvedenú pri uzatvorení poistenia, najneskôr do konca mesiaca nasledujúceho po mesiaci splnenia podmienok.",
     "categories": [
       "Poistenie"
     ],
     "search_keywords": [
-      "životné poistenie Vital",
-      "darček za poistenie",
+      "Vital poistenie",
+      "životné poistenie odmena",
       "e-book dlhovekosť",
-      "DNA test",
-      "Vital online benefit",
-      "poistenie cez SmartBanking",
-      "poistenie cez web ČSOB"
+      "DNA test odmena",
+      "benefit k poisteniu",
+      "Vital online akcia",
+      "ČSOB Poisťovňa odmena"
     ],
     "referenced_statutes": [],
     "referenced_statutes_resolved": []
