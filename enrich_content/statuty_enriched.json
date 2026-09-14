@@ -1,5 +1,40 @@
 [
   {
+    "title": "Štatút akcie „Podnikateľský účet navždy zadarmo“",
+    "url": "https://www.csob.sk/-/statut-akcie-podnikatelsky-ucet-navzdy-zadarmo?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "066900eaa20bca9a",
+    "short_title": "Zrušenie poplatku za vedenie podnikateľského účtu pre nadácie a občianske združenia",
+    "summary": "Akcia pre nadácie a občianske združenia, ktoré sa stanú novými klientmi ČSOB a zriadia si Podnikateľské konto. Odmenou je natrvalo zrušený poplatok za vedenie tohto účtu.",
+    "eligibility": "Nadácie a občianske združenia, ktoré sa stanú novými klientmi ČSOB (nemali s ČSOB žiadny zmluvný vzťah ku dňu 14.09.2026 vrátane) a v období 15.09.2026 – 31.12.2026 si v pobočke ČSOB zriadia balík služieb „Podnikateľské konto“.",
+    "conditions": [
+      "Klient sa musí stať novým klientom ČSOB v období od 15.09.2026 do 31.12.2026 (žiadny predchádzajúci zmluvný vzťah s ČSOB k 14.09.2026)",
+      "Zriadenie balíka služieb „Podnikateľské konto“ v pobočke ČSOB v období od 15.09.2026 do 31.12.2026",
+      "Odmenu možno získať iba raz na klienta",
+      "Pri viacerých zriadených podnikateľských účtoch sa odmena vzťahuje len na prvý zriadený účet"
+    ],
+    "reward": "Vedenie zriadeného podnikateľského účtu navždy bez poplatku za vedenie",
+    "reward_amount_eur": null,
+    "date_from": "2026-09-15",
+    "date_to": "2026-12-31",
+    "payout_deadline": "30 kalendárnych dní od zriadenia podnikateľského účtu",
+    "payout_note": "Odmena (odpustenie poplatku za vedenie účtu) sa uplatní priamo na novozriadenom podnikateľskom účte, najneskôr do 30 kalendárnych dní od jeho zriadenia.",
+    "categories": [
+      "Účty a platby",
+      "Ostatné"
+    ],
+    "search_keywords": [
+      "podnikateľský účet zadarmo",
+      "podnikateľské konto bez poplatku",
+      "nadácia účet zadarmo",
+      "občianske združenie účet",
+      "vedenie účtu zadarmo navždy",
+      "nový podnikateľský klient odmena"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Vrátenie 1 až 4 anuitných splátok pri refinancovaní hypotéky z inej banky - platí pre žiadosti podané v období od 01.09.2026 do 31.10.2026“",
     "url": "https://www.csob.sk/-/statut-akcie-vratenie-1-az-4-anuitnych-splatok-pri-refinancovani-hypoteky-z-inej-banky-plati-pre-ziadost-od-01092026-do-31102026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
