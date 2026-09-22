@@ -1,5 +1,41 @@
 [
   {
+    "title": "Štatút akcie „Podnikateľské úvery jeseň 2026“",
+    "url": "https://www.csob.sk/-/statut-akcie-podnikatelske-uvery-jesen-2026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "c47c5285f998357e",
+    "short_title": "Zvýhodnený podnikateľský úver SIHPZ - jeseň 2026",
+    "summary": "Akcia ponúka podnikateľom 100% zľavu zo spracovateľského poplatku pri poskytnutí podnikateľského úveru SIHPZ (úver na digitalizáciu a automatizáciu poskytovaný v spolupráci so Slovak Investment Holding). Klient musí podať žiadosť o úver počas trvania akcie (1.10.2026 - 30.11.2026), splniť interné podmienky úverovej politiky ČSOB, podpísať úverovú zmluvu najneskôr do 30.11.2026 a úver načerpať najneskôr do 31.9.2027.",
+    "eligibility": "Fyzická osoba podnikateľ alebo právnická osoba s ročným obchodným obratom do 2,5 mil. EUR, ktorá podá žiadosť o podnikateľský úver SIHPZ počas trvania akcie a splní podmienky úverovej politiky ČSOB.",
+    "conditions": [
+      "Byť fyzickou osobou podnikateľom alebo právnickou osobou s ročným obratom do 2,5 mil. EUR",
+      "Podať žiadosť o podnikateľský úver SIHPZ (na digitalizáciu a automatizáciu) v termíne trvania akcie, t.j. od 1.10.2026 do 30.11.2026",
+      "Splniť podmienky na poskytnutie úveru podľa internej úverovej politiky ČSOB platnej v čase posudzovania žiadosti",
+      "Podpísať úverovú zmluvu s ČSOB najneskôr do 30.11.2026 vrátane",
+      "Načerpať poskytnutý úver najneskôr do 31.9.2027 vrátane"
+    ],
+    "reward": "100% zľava zo spracovateľského poplatku za poskytnutie podnikateľského úveru SIHPZ (poplatok bežne účtovaný podľa Sadzobníka pre fyzické osoby – podnikateľov a právnické osoby)",
+    "reward_amount_eur": null,
+    "date_from": "2026-10-01",
+    "date_to": "2026-11-30",
+    "payout_deadline": "2027-09-31",
+    "payout_note": "Benefit (zľava z poplatku) sa uplatní priamo pri poskytnutí úveru; úver musí byť čerpaný najneskôr do 31.9.2027, aby bola podmienka akcie splnená.",
+    "categories": [
+      "Úvery a lízing"
+    ],
+    "search_keywords": [
+      "podnikateľský úver",
+      "zľava z poplatku za úver",
+      "SIHPZ",
+      "úver na digitalizáciu",
+      "úver na automatizáciu",
+      "podnikateľské úvery jeseň 2026",
+      "zvýhodnený úver pre podnikateľov"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Podnikateľský účet navždy zadarmo“",
     "url": "https://www.csob.sk/-/statut-akcie-podnikatelsky-ucet-navzdy-zadarmo?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
