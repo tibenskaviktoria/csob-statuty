@@ -1,5 +1,70 @@
 [
   {
+    "title": "Štatút akcie „Odvezte sa na náš účet počas Bielej noci“",
+    "url": "https://www.csob.sk/-/statut-akcie-odvezte-sa-na-nas-ucet-pocas-bielej-noci?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "a5940e72b35f5a63",
+    "short_title": "Bezplatný lístok MHD za aktiváciu cez SmartBanking (Biela noc)",
+    "summary": "Akcia pri príležitosti Bielej noci v Bratislave. Klienti ČSOB, ktorí si 2.10. alebo 3.10.2026 v mobilnej aplikácii ČSOB SmartBanking cez SmartSlužbu+ IDS BK aktivujú 24-hodinový lístok na MHD, ho získajú zadarmo (za 0 EUR). Odmena sa poskytuje prvým 2 026 účastníkom, ktorí splnia podmienky, teda do vyčerpania tohto počtu lístkov.",
+    "eligibility": "Fyzická osoba, klient ČSOB s účtom a prístupom do mobilnej aplikácie ČSOB SmartBanking, ktorý si 2.10.2026 alebo 3.10.2026 aktivuje 24-hodinový lístok na MHD v Bratislave cez SmartSlužbu+ IDS BK v aplikácii.",
+    "conditions": [
+      "Mať účet v ČSOB a prístup do aplikácie ČSOB SmartBanking",
+      "Aktivovať si 24-hodinový lístok na MHD v Bratislave presne 2.10.2026 alebo 3.10.2026",
+      "Aktivácia musí prebehnúť cez SmartSlužbu+ IDS BK v aplikácii ČSOB SmartBanking",
+      "Odmenu môže každý účastník získať počas akcie len raz",
+      "Platí len do vyčerpania 2 026 kusov lístkov"
+    ],
+    "reward": "Bezplatný 24-hodinový cestovný lístok na MHD v Bratislave (zóna 100+101, základný) za 0 EUR namiesto bežnej ceny",
+    "reward_amount_eur": null,
+    "date_from": "2026-10-02",
+    "date_to": "2026-10-03",
+    "payout_deadline": null,
+    "payout_note": "Odmena (bezplatný lístok) sa poskytuje jednorazovo a ihneď pri aktivácii cestovného lístka v aplikácii, žiadne dodatočné vyplácanie nie je potrebné.",
+    "categories": [
+      "Účty a platby",
+      "Ostatné"
+    ],
+    "search_keywords": [
+      "Biela noc",
+      "lístok MHD zadarmo",
+      "SmartBanking MHD lístok",
+      "SmartSlužba IDS BK",
+      "bezplatná cestovná karta Bratislava",
+      "akcia Biela noc ČSOB"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
+    "title": "Štatút akcie „Každý nákup je investíciou II“",
+    "url": "https://www.csob.sk/-/statut-akcie-kazdy-nakup-je-investiciou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "f5dd6ba8e96d8c09",
+    "short_title": "Odmena za založenie Smart účtu a platby kartou",
+    "summary": "Akcia ČSOB \"Každý nákup je investíciou II\" odmeňuje nových aj existujúcich klientov, ktorí si založia Smart účet (Smart účet, Smart účet Plus alebo Smart účet Premium), aktivujú si službu Smart Drobné a platia kartou. Za splnenie úvodných podmienok (založenie účtu, aktivácia Smart Drobné, prvá platba kartou) získa klient 50 Eur. Následne môže počas 4 po sebe nasledujúcich mesiacov získať ďalších 25 Eur mesačne (max. 4x), ak v danom mesiaci minie kartou aspoň 250 Eur a má aktívnu službu Smart Drobné. Maximálna celková odmena je 150 Eur.",
+    "eligibility": "Fyzické osoby od 18 rokov s pobytom a daňovou rezidenciou v SR a slovenským rodným číslom. Buď noví klienti ČSOB (ktorí k 30.9.2026 nemali zmluvný vzťah s ČSOB, 365.bank ani Poštovou bankou), alebo existujúci klienti ČSOB, ktorí minimálne 6 mesiacov pred akciou nemali žiadny bežný účet. Zamestnanci ČSOB Finančnej skupiny a 365.bank sú vylúčení, ich rodinní príslušníci sa zúčastniť môžu.",
+    "conditions": [
+      "Založiť si Smart účet, Smart účet Plus alebo Smart účet Premium v období 1.10.2026 - 31.12.2026 (online, v aplikácii alebo na pobočke)",
+      "Aktivovať si v aplikácii ČSOB SmartBanking službu Smart Drobné",
+      "Uskutočniť prvú platbu kartou k účtu v minimálnej výške 0,01 Eur (podmienka pre 50 Eur)",
+      "Pre ďalšiu odmenu: každý mesiac počas 4 po sebe nasledujúcich mesiacov minúť kartou minimálne 250 Eur a mať aktívnu službu Smart Drobné (25 Eur za každý splnený mesiac, max. 4x)",
+      "Nekombinovať s inou akciou ČSOB týkajúcou sa benefitu za otvorenie nového bežného účtu",
+      "V prípade viacerých Smart účtov sa počíta len prvý založený účet",
+      "V čase pripísania odmeny musí mať účastník účet aj naďalej zriadený"
+    ],
+    "reward": "Finančná odmena až do výšky 150 Eur (50 Eur za založenie účtu + aktiváciu Smart Drobné + prvú platbu kartou, plus až 4x 25 Eur za mesačné splnenie podmienky platieb kartou min. 250 Eur)",
+    "reward_amount_eur": 150,
+    "date_from": "2026-10-01",
+    "date_to": "2027-04-30",
+    "payout_deadline": "2027-05-31",
+    "payout_note": "Vyhodnocovanie a vyplácanie prebieha mesačne od 1.11.2026 do 31.5.2027. 50 Eur sa pripíše v mesiaci nasledujúcom po aktivácii Smart Drobné a prvej platbe kartou. 25 Eur sa pripisuje za každý mesiac splnenia podmienky platieb (min. 250 Eur kartou), vyplácané od decembra 2026 do mája 2027, maximálne 4x (spolu 100 Eur). Odmena sa pripisuje priamo na bežný účet klienta.",
+    "categories": [
+      "Účty a platby",
+      "Karty"
+    ],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Podnikateľské úvery jeseň 2026“",
     "url": "https://www.csob.sk/-/statut-akcie-podnikatelske-uvery-jesen-2026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
@@ -488,8 +553,8 @@
     "referenced_statutes_resolved": [
       {
         "name": "Každý nákup je investíciou",
-        "url": "https://www.csob.sk/-/statut-akcie-kazdy-nakup-je-investiciou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-        "title": "Štatút akcie „Každý nákup je investíciou“"
+        "url": "https://www.csob.sk/-/statut-akcie-kazdy-nakup-je-investiciou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+        "title": "Štatút akcie „Každý nákup je investíciou II“"
       }
     ],
     "content_hash": "6a91c6d82e4b2e93"
@@ -865,8 +930,8 @@
     "referenced_statutes_resolved": [
       {
         "name": "Každý nákup je investíciou",
-        "url": "https://www.csob.sk/-/statut-akcie-kazdy-nakup-je-investiciou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-        "title": "Štatút akcie „Každý nákup je investíciou“"
+        "url": "https://www.csob.sk/-/statut-akcie-kazdy-nakup-je-investiciou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+        "title": "Štatút akcie „Každý nákup je investíciou II“"
       }
     ],
     "content_hash": "2b539551175d92ba"
