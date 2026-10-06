@@ -1,5 +1,79 @@
 [
   {
+    "title": "Štatút súťaže „Moja Garáž – súťaž o elektro-bicykel a palivové karty“",
+    "url": "https://www.csob.sk/-/%C5%A1tat%C3%BAt-s%C3%BA%C5%A5a%C5%BEe-%E2%80%9Emoja-gar%C3%A1%C5%BE-s%C3%BA%C5%A5a%C5%BE-o-elektro-bicykel-a-palivov%C3%A9-karty-?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "51ed714a3e9f1bb8",
+    "short_title": "Súťaž o elektro-bicykel a palivové karty za používanie SmartSlužby Moja Garáž",
+    "summary": "Súťaž ČSOB pre klientov, ktorí si v mobilnej aplikácii ČSOB SmartBanking vytvoria profil a zadajú EČV vozidla v novej SmartSlužbe+ „Moja garáž“. Zapojení účastníci sú automaticky zaradení do žrebovania o elektro-bicykle (mesačne) a palivové karty OMV (týždenne).",
+    "eligibility": "Fyzické osoby (aj podnikatelia) od 18 rokov, občania SR/EÚ alebo cudzinci s pobytom v SR, ktorí si v období súťaže vytvoria profil a zadajú EČV vozidla v SmartSlužbe+ „Moja garáž“ v aplikácii ČSOB SmartBanking. EČV musí patriť majiteľovi vozidla, jeho rodinnému príslušníkovi, alebo ísť o firemné vozidlo FO podnikateľa. Účastník musí mať v ČSOB aktuálny telefonický kontakt a email. Zamestnanci ČSOB Finančnej skupiny sú vylúčení (ich rodinní príslušníci sa zúčastniť môžu).",
+    "conditions": [
+      "Vytvoriť profil a zadať EČV v SmartSlužbe+ \"Moja garáž\" v ČSOB SmartBanking v období trvania súťaže",
+      "Pri viacerých nahratých EČV je účastník do žrebovania zaradený len raz",
+      "Mať v systémoch ČSOB aktuálny telefón a email",
+      "Jeden účastník môže byť počas súťaže odmenený iba raz (buď palivová karta, alebo bicykel)",
+      "Zamestnanci ČSOB Finančnej skupiny sú zo súťaže vylúčení"
+    ],
+    "reward": "3x elektro-bicykel Kellys TYGON RS10 v hodnote 2399 € (žrebovanie mesačne - november, december, január 2027) a 12x palivová karta OMV v hodnote 100 € (žrebovanie každý piatok)",
+    "reward_amount_eur": 2399,
+    "date_from": "2026-10-07",
+    "date_to": "2026-12-31",
+    "payout_deadline": "14 pracovných dní od žrebovania",
+    "payout_note": "Výhra je doručená kuriérom do 14 pracovných dní od vyžrebovania, výherca pri prevzatí podpisuje preberací protokol. Výherca je o výhre informovaný emailom vedeným v systémoch ČSOB.",
+    "categories": [
+      "Účty a platby",
+      "Ostatné"
+    ],
+    "search_keywords": [
+      "Moja Garáž",
+      "elektro-bicykel súťaž",
+      "palivová karta OMV",
+      "SmartSlužba Moja garáž",
+      "ČSOB SmartBanking súťaž",
+      "EČV auto súťaž",
+      "bicykel Kellys",
+      "žrebovanie ČSOB"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
+    "title": "Štatút súťaže „Získajte palivovú kartu OMV“",
+    "url": "https://www.csob.sk/-/statut-sutaze-ziskajte-palivovu-kartu-omv?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "7b99443b92655947",
+    "short_title": "Súťaž o palivové karty OMV pri poistení vozidla AutoDuo",
+    "summary": "Klienti, ktorí si počas obdobia 5.10.2026 – 5.11.2026 uzatvoria nové Poistenie vozidla AutoDuo (ročné poistné, zaplatené, zriadené cez web csob.sk alebo ČSOB SmartBanking), budú automaticky zaradení do žrebovania o 20 digitálnych palivových kariet OMV v hodnote 100 EUR. Žrebovanie 20 výhercov prebehne do 30.11.2026, výhercovia budú informovaní e-mailom.",
+    "eligibility": "Fyzické osoby od 18 rokov, ktoré si v čase trvania súťaže uzatvorili nové Poistenie vozidla AutoDuo výhradne cez web csob.sk alebo aplikáciu ČSOB SmartBanking, majú aktívne a zaplatené ročné poistné, udelili súhlas so spracúvaním osobných údajov pre súťaže a majú v systémoch ČSOB uvedenú e-mailovú adresu. Zamestnanci ČSOB Finančnej skupiny sú vylúčení (ich rodinní príslušníci sa zúčastniť môžu).",
+    "conditions": [
+      "Uzatvoriť nové Poistenie vozidla AutoDuo v období trvania súťaže (5.10.2026 – 5.11.2026)",
+      "Poistenie musí byť v čase žrebovania aktívne, zaplatené a s ročným platením poistného",
+      "Poistenie musí byť zriadené výhradne cez csob.sk alebo ČSOB SmartBanking",
+      "Udelený súhlas so spracúvaním osobných údajov pre spotrebiteľské súťaže",
+      "V systémoch ČSOB musí byť uvedená platná e-mailová adresa",
+      "Pri viacerých zmluvách rovnakého typu je účastník zaradený do žrebovania len raz"
+    ],
+    "reward": "20 digitálnych palivových kariet OMV v hodnote 100 EUR",
+    "reward_amount_eur": 100,
+    "date_from": "2026-10-05",
+    "date_to": "2026-11-05",
+    "payout_deadline": "2026-11-30",
+    "payout_note": "Žrebovanie 20 výhercov sa uskutoční do 30.11.2026, výhercovia budú informovaní e-mailom pracovníkom ČSOB Poisťovne. Výhra (digitálna palivová karta OMV) bude doručená elektronicky na e-mail. Platnosť karty je do 21.03.2027.",
+    "categories": [
+      "Poistenie"
+    ],
+    "search_keywords": [
+      "palivová karta OMV",
+      "súťaž AutoDuo",
+      "poistenie vozidla súťaž",
+      "OMV karta 100 eur",
+      "žrebovanie poistenie auta",
+      "benzínová karta výhra"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Odvezte sa na náš účet počas Bielej noci“",
     "url": "https://www.csob.sk/-/statut-akcie-odvezte-sa-na-nas-ucet-pocas-bielej-noci?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
