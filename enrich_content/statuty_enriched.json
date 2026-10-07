@@ -1801,71 +1801,50 @@
     "title": "Štatút akcie „Poistenie s odmenou.“",
     "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
-    "short_title": "Poistenie s odmenou",
-    "summary": "Akcia na odmeňovanie nových klientov ČSOB, ktorí si otvoria Smart účet a majú súčasne platné poistenie u ČSOB Poisťovne. Odmena 70 EUR sa vyplatí na nový účet do 30 dní od jeho otvorenia (ak je aktivovaný SmartBanking).",
-    "eligibility": "Fyzické osoby - rezidenti a občania SR vo veku od 18 rokov, ktorí sa nestali klientom ČSOB minimálne 6 mesiacov pred otvorením účtu.",
+    "content_hash": "170edaa414cf25d6",
+    "short_title": "Odmena 70 € za nový Smart účet a poistenie v ČSOB Poisťovni",
+    "summary": "Akcia ČSOB odmeňuje 70 € nových klientov, ktorí si otvoria Smart účet (Smart účet, Smart účet Plus alebo Smart účet Premium), aktivujú ČSOB SmartBanking a zároveň majú uhradené poistné na ďalšie obdobie aspoň pri jednom vybranom poistení ČSOB Poisťovne (PZP, havarijné, životné alebo poistenie bývania Domos Kompakt, resp. aj AutoDuo od Dodatku č.2), ku ktorému dostali ponuku od poisťovne/finančného agenta. Pôvodný štatút z 15.10.2025 bol postupne menený troma dodatkami: Dodatok č.1 predĺžil trvanie akcie a lehotu na otvorenie účtu z pôvodného 30.4.2026 na 31.10.2026, Dodatok č.2 rozšíril zoznam relevantných poistení o AutoDuo, Dodatok č.3 doplnil vylúčenie klientov 365.bank a Poštovej banky z účasti v akcii.",
+    "eligibility": "Fyzické osoby - rezidenti SR vo veku 18+, ktorí sa stanú novými klientmi ČSOB (bez zmluvného vzťahu s ČSOB aspoň 6 predchádzajúcich mesiacov) a otvoria nový Smart účet. Vylúčení sú klienti 365.bank a Poštovej banky (podľa Dodatku č.3).",
     "conditions": [
-      "Otvorenie nového Smart účtu (Smart účet, Smart účet Plus alebo Smart účet Premium) v období od 11.11.2025 do 31.10.2026 cez www.csob.sk, mobilnú aplikáciu ČSOB SmartBanking alebo v pobočke ČSOB",
-      "Aktivácia mobilnej aplikácie ČSOB SmartBanking do 30 dní od otvorenia nového účtu",
-      "V čase vyhodnotenia akcie musí byť platné a riadne uhradené poistné na ďalšie poistné obdobie aspoň jedného z týchto poistení ČSOB Poisťovne: Povinné zmluvné poistenie, Havarijné poistenie, pravidelne platené Životné poistenie (rizikové, investičné), Poistenie bývania (Domos Kompakt) alebo AutoDuo",
-      "Obdržanie e-mailovej ponuky zo strany ČSOB",
-      "Odmena sa vyplatí iba raz - opakované zriadenie účtu nezakladá nárok na novú odmenu"
+      "Stať sa novým klientom ČSOB v období 11.11.2025 – 31.10.2026 (pôvodne do 30.4.2026, predĺžené Dodatkom č.1)",
+      "Ku dňu otvorenia účtu nemať minimálne 6 predchádzajúcich mesiacov žiadny zmluvný vzťah s ČSOB",
+      "Uzatvoriť zmluvu na nový Smart účet, Smart účet Plus alebo Smart účet Premium v danom období cez web, appku alebo pobočku",
+      "Aktivovať ČSOB SmartBanking najneskôr do 30 dní od otvorenia účtu",
+      "Mať v čase vyhodnotenia akcie platné a uhradené poistné na ďalšie obdobie aspoň pri jednom z poistení: PZP, Havarijné, Životné (rizikové/investičné), Poistenie bývania Domos Kompakt alebo AutoDuo (doplnené Dodatkom č.2)",
+      "K danému poisteniu musí klient dostať ponuku benefitu od ČSOB Poisťovne alebo jej finančného agenta/e-mailom od ČSOB",
+      "Nie je možné kombinovať s akciou PatronGO, 'Buďte smart, plaťte smart' ani inou akciou s benefitom za nový účet pre neklientov",
+      "Odmenu je možné získať len raz, pri viacerých účtoch sa vypláca len na prvý zriadený",
+      "Vylúčení sú klienti 365.bank a Poštovej banky (Dodatok č.3)"
     ],
-    "reward": "Pripísanie finančných prostriedkov na nový ČSOB Smart účet",
+    "reward": "Jednorazová peňažná odmena 70 € pripísaná na nový ČSOB Smart účet",
     "reward_amount_eur": 70,
     "date_from": "2025-11-11",
     "date_to": "2026-10-31",
-    "payout_deadline": "2025-12-31",
-    "payout_note": "Suma 70 EUR bude vyplatená do 30 dní od otvorenia Smart účtu, ak je splnená aj podmienka aktivácie SmartBankingu. Ak ide o zriadenie nového poistenia, odmena môže byť vyplatená neskôr, až po zriadení poistenia a uhradení poistného na ďalšie poistné obdobie. Nárok na odmenu zaniká, ak nie je v čase splatnosti zriadený aktívny ČSOB Smart účet.",
-    "search_keywords": [
-      "70 eur za nový účet",
-      "bonus za otvorenie Smart účtu",
-      "odmena pre nových klientov ČSOB",
-      "poistenie s odmenou",
-      "SmartBanking aktivácia",
-      "poistenie ČSOB Poisťovne"
-    ],
-    "categories": [
-      "Účty a platby"
-    ],
-    "referenced_statutes": [],
-    "referenced_statutes_resolved": [],
-    "content_hash": "a82a88eba45fa085"
+    "payout_deadline": "30 dní od otvorenia Smart účtu (ak je splnená aj podmienka aktivácie SmartBankingu)",
+    "referenced_statutes_resolved": []
   },
   {
     "title": "Štatút akcie „Nové Poistenie so smart odmenou“",
     "url": "https://www.csob.sk/-/statut-akcie-nove-poistenie-so-smart-odmenou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
-    "short_title": "Nové Poistenie so smart odmenou",
-    "summary": "Akcia na odmeňovanie nových klientov ČSOB. Získajte 70 EUR, keď si otvoríte nový Smart účet, aktivujete mobilnú aplikáciu SmartBanking a zjednaním si nového povinného zmluvného poistenia, havarijného poistenia alebo AutoDuo v ČSOB Poisťovni.",
-    "eligibility": "Fyzické osoby - rezidenti, občania SR vo veku minimálne 18 rokov. Nový klient ČSOB, ktorý nemá minimálne 6 predchádzajúcich kalendárnych mesiacov žiaden zmluvný vzťah s ČSOB.",
+    "content_hash": "590e63e2d6398551",
+    "short_title": "Odmena 70€ za nový Smart účet + poistenie v ČSOB Poisťovni",
+    "summary": "Akcia odmeňuje nových klientov ČSOB sumou 70 €, ak si otvoria nový Smart účet (Smart účet, Smart účet Plus alebo Smart účet Premium), aktivujú ČSOB SmartBanking a zároveň si dojednajú nové poistenie (pôvodne PZP alebo Havarijné poistenie, od dodatku č.2 aj AutoDuo) v ČSOB Poisťovni cez vybrané webové služby, ktoré obsahujú aj ponuku Smart účtu, a uhradia poistné na prvé obdobie. Pôvodný štatút bol vydaný 15.10.2025 a následne trikrát upravený: Dodatok č.1 (24.4.2026) predĺžil trvanie akcie a lehotu na otvorenie účtu z 30.4.2026 na 31.10.2026, Dodatok č.2 (25.5.2026) rozšíril ponuku poistenia o produkt AutoDuo, Dodatok č.3 (6.10.2026) vylúčil z akcie klientov 365.bank a Poštovej banky.",
+    "eligibility": "Fyzické osoby - rezidenti, občania SR vo veku od 18 rokov, ktorí sa stanú novými klientmi ČSOB (minimálne 6 predchádzajúcich kalendárnych mesiacov nemali žiaden zmluvný vzťah s ČSOB) v období od 11.11.2025 do 31.10.2026. Podľa Dodatku č.3 sú vylúčení klienti 365.bank alebo Poštovej banky.",
     "conditions": [
-      "Otvorenie nového Smart účtu, Smart účtu Plus alebo Smart účtu Premium v období od 11.11.2025 do 31.10.2026 cez www.csob.sk, mobilnú aplikáciu ČSOB SmartBanking alebo v pobočke ČSOB",
-      "Aktivácia mobilnej aplikácie ČSOB SmartBanking najneskôr do 30 dní od otvorenia nového účtu",
-      "Dojednanie si nového povinného zmluvného poistenia, havarijného poistenia alebo AutoDuo v ČSOB Poisťovni a úhrada poistného na prvé poistné obdobie",
-      "Odmenu je možné získať iba raz. Opakované zriadenie účtu nezakladá nárok na opakovanú odmenu",
-      "Pri otvorení viacerých účtov počas kampane je odmena vyplatená len na prvý otvorený účet",
-      "Akcia sa nemôže kombinovať s akciami PatronGO, Buďte smart plaťte smart, Poistenie s odmenou a inou akvizičnou akciou s finančným benefitom"
+      "Stať sa novým klientom ČSOB v období od 11.11.2025 do 31.10.2026 (bez zmluvného vzťahu s ČSOB aspoň 6 predchádzajúcich mesiacov)",
+      "Uzatvoriť zmluvu na nový Smart účet, Smart účet Plus alebo Smart účet Premium v období od 11.11.2025 do 31.10.2026 cez www.csob.sk, mobilnú aplikáciu alebo pobočku, najneskôr do dátumu uvedeného v e-mailovej ponuke",
+      "Aktivovať mobilnú aplikáciu ČSOB SmartBanking najneskôr do 30 dní od otvorenia Smart účtu",
+      "Dojednať nové Povinné zmluvné poistenie, Havarijné poistenie alebo AutoDuo v ČSOB Poisťovni cez vybrané webové služby, ktoré obsahujú aj ponuku Smart účtu, a uhradiť poistné na prvé poistné obdobie",
+      "Nekombinovať s akciou PatronGO, 'Buďte smart, plaťte smart', 'Poistenie s odmenou' ani inou akvizičnou akciou ČSOB pre neklientov",
+      "Klient nie je klientom 365.bank ani Poštovej banky (od 6.10.2026)"
     ],
-    "reward": "Pripísanie 70 EUR na nový ČSOB Smart účet",
+    "reward": "Jednorazová peňažná odmena 70 € pripísaná na nový ČSOB Smart účet",
     "reward_amount_eur": 70,
     "date_from": "2025-11-11",
     "date_to": "2026-10-31",
-    "payout_deadline": null,
-    "payout_note": "Suma 70 EUR bude vyplatená do 30 dní od otvorenia Smart účtu, ak je splnená aj podmienka aktivácie SmartBankingu. Pri zriadení nového poistenia môže byť odmena vyplatená neskôr, až po zriadení poistenia a uhradení poistného na ďalšie poistné obdobie. Nárok na odmenu nezanikne, ak v čase splatnosti nie je zriadený ČSOB Smart účet.",
-    "search_keywords": [
-      "70 eur za nový Smart účet",
-      "odmena za otvorenie účtu",
-      "bonus pri poistení",
-      "poistenie s odmenou",
-      "SmartBanking"
-    ],
-    "categories": [
-      "Účty a platby"
-    ],
-    "referenced_statutes": [],
-    "referenced_statutes_resolved": [],
-    "content_hash": "444feeca043be4dd"
+    "payout_deadline": "30 dní od otvorenia Smart účtu",
+    "referenced_statutes_resolved": []
   },
   {
     "title": "Štatút akcie „Preplatenie platby kartou VISA II“",
