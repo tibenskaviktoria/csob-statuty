@@ -1,5 +1,40 @@
 [
   {
+    "title": "Štatút súťaže „Investovať do seba je výhra“",
+    "url": "https://www.csob.sk/-/statut-sutaze-investovat-do-seba-je-vyhra?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "e4e85d0b6908f7a7",
+    "short_title": "Súťaž o ceny za aktiváciu a investovanie cez Smart Drobné",
+    "summary": "Súťaž ČSOB pre klientov, ktorí si v období 10.10.2026 - 10.12.2026 prvýkrát aktivujú službu Smart Drobné (automatické investovanie zaokrúhlených platieb z debetnej karty) a zrealizujú aspoň jednu investíciu vo výške 10 EUR nazbieranú z tejto služby. Zo všetkých, ktorí splnia podmienky, bude po skončení súťaže vyžrebovaných 39 výhercov rôznych cien (elektronika Apple a poukážky Alza).",
+    "eligibility": "Fyzická osoba od 18 rokov, rezident SR so slovenským rodným číslom, ktorá nemala aktivovanú službu Smart Drobné do 9.10.2026 vrátane, v období 10.10.2026 - 10.12.2026 ju aktivuje, má v ČSOB uvedenú aktuálnu e-mailovú adresu a zrealizuje aspoň jednu investíciu 10 EUR cez Smart Drobné. Zamestnanci ČSOB Finančnej skupiny sú vylúčení, ich rodinní príslušníci sa zúčastniť môžu.",
+    "conditions": [
+      "Nemať aktivovanú službu Smart Drobné do 9.10.2026 vrátane",
+      "Aktivovať službu Smart Drobné v období 10.10.2026 - 10.12.2026",
+      "Mať v ČSOB aktuálnu e-mailovú adresu",
+      "Zrealizovať aspoň jednu automatickú investíciu 10 EUR cez Smart Drobné v období trvania súťaže",
+      "Každý účastník môže byť zaradený do žrebovania len raz a získať najviac jednu výhru"
+    ],
+    "reward": "39 výhercov získa jednu z výhier: 3x Apple iPhone 18 Pro 256 GB, 3x Apple AirPods Max 2, 3x Apple Watch Series 12 42 mm, 30x darčeková poukážka Alza v hodnote 100 EUR",
+    "reward_amount_eur": 100,
+    "date_from": "2026-10-10",
+    "date_to": "2026-12-10",
+    "payout_deadline": "2027-01-31",
+    "payout_note": "Vecné výhry (Apple produkty) budú doručené kuriérskou službou, elektronické poukážky Alza budú zaslané e-mailom. Výhra sa poskytuje jednorazovo po overení splnenia všetkých podmienok, najneskôr do 31.1.2027.",
+    "categories": [
+      "Investovanie"
+    ],
+    "search_keywords": [
+      "Smart Drobné",
+      "súťaž investovať do seba",
+      "žrebovanie iPhone",
+      "zaokrúhľovanie platieb investícia",
+      "výhra Apple",
+      "poukážka Alza súťaž"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút súťaže „Moja Garáž – súťaž o elektro-bicykel a palivové karty“",
     "url": "https://www.csob.sk/-/%C5%A1tat%C3%BAt-s%C3%BA%C5%A5a%C5%BEe-%E2%80%9Emoja-gar%C3%A1%C5%BE-s%C3%BA%C5%A5a%C5%BE-o-elektro-bicykel-a-palivov%C3%A9-karty-?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
