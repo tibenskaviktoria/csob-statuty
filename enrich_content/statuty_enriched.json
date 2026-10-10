@@ -1,5 +1,30 @@
 [
   {
+    "title": "Štatút akcie „100€ za platby kartou“",
+    "url": "https://www.csob.sk/-/statut-akcie-100eur-za-platby-kartou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "6138e8e0e1ed5553",
+    "short_title": "Odmena 100€ za platby kartou k novému Smart účtu",
+    "summary": "Akcia nadväzuje na predchádzajúce akcie ČSOB (Poistenie s odmenou, Nové poistenie so smart odmenou, Leasing so smart odmenou II.), v rámci ktorých klient už získal 70€ za otvorenie nového Smart účtu. Klienti ČSOB Leasing alebo ČSOB Poisťovne, ktorí si v období od 1.10.2026 do 31.12.2026 otvorili nový Smart účet (Smart/Plus/Premium) v rámci týchto akcií, si aktivujú aplikáciu ČSOB SmartBanking a v nej službu Smart Drobné, a následne počas max. 4 mesiacov platia kartou minimálne 250€ mesačne, získajú dodatočnú odmenu 25€ za každý mesiac splnenia podmienky, spolu až 100€.",
+    "eligibility": "Fyzické osoby - rezidenti, občania SR vo veku od 18 rokov, ktorí sú klientmi ČSOB Leasing alebo ČSOB Poisťovne, stali sa novými klientmi ČSOB (bez zmluvného vzťahu s ČSOB aspoň 6 predchádzajúcich mesiacov) a otvorili si Smart účet v rámci akcií s odmenou 70€. Zamestnanci ČSOB Finančnej skupiny sú vylúčení, ich rodinní príslušníci sa zúčastniť môžu.",
+    "conditions": [
+      "Byť klientom ČSOB Leasing alebo ČSOB Poisťovne",
+      "Stať sa novým klientom ČSOB v období 1.10.2026 - 31.12.2026 (bez zmluvného vzťahu s ČSOB min. 6 predchádzajúcich mesiacov)",
+      "Uzatvoriť zmluvu o Smart účte, Smart účte Plus alebo Smart účte Premium v období 1.10.2026 - 31.12.2026 cez web, mobilnú aplikáciu alebo pobočku, v rámci akcií Poistenie s odmenou/II., Nové poistenie so smart odmenou/II. alebo Leasing so smart odmenou II., a získať za to odmenu 70€",
+      "Do 30 dní od otvorenia účtu aktivovať mobilnú aplikáciu ČSOB SmartBanking a v nej službu Smart Drobné",
+      "Počas max. 4 mesiacov po mesiaci otvorenia účtu uskutočniť platby kartou vydanou k danému účtu v minimálnej hodnote 250€/mesiac",
+      "Mať naďalej zriadenú službu Smart Drobné v čase vyplatenia odmeny",
+      "Mať naďalej zriadený novozriadený bežný účet v čase pripísania odmeny",
+      "Akciu nemožno kombinovať s inými akciami s benefitom za otvorenie účtu okrem uvedených"
+    ],
+    "reward": "Finančná odmena 25 € za každý mesiac splnenia podmienky platieb kartou, maximálne 4-krát (spolu až 100 €), pripísaná na novozriadený bežný účet",
+    "reward_amount_eur": 100,
+    "date_from": "2026-10-01",
+    "date_to": "2027-04-30",
+    "payout_deadline": "2027-05-31",
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút súťaže „Investovať do seba je výhra“",
     "url": "https://www.csob.sk/-/statut-sutaze-investovat-do-seba-je-vyhra?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
