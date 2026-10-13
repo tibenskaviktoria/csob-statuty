@@ -1,5 +1,43 @@
 [
   {
+    "title": "Štatút akcie „Leasing so smart odmenou II.“",
+    "url": "https://www.csob.sk/-/statut-akcie-leasing-so-smart-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "fb8f47de2faa5d7d",
+    "short_title": "Odmena 70 € za nový Smart účet pre klientov ČSOB Leasingu",
+    "summary": "Akcia pre existujúcich klientov ČSOB Leasing, a.s. (so zmluvou o financovaní), ktorí sa stanú novými klientmi ČSOB otvorením nového Smart účtu cez web csob.sk (ponuka \"Chcem Smart účet k leasingu\" alebo emailová ponuka od ČSOB Leasing) a aktivujú si mobilnú aplikáciu ČSOB SmartBanking do 30 dní od otvorenia účtu. Za splnenie podmienok získajú odmenu 70 €, pripísanú na nový Smart účet.",
+    "eligibility": "Fyzické osoby - rezidenti, občania SR vo veku od 18 rokov, ktorí majú aktívnu zmluvu o financovaní s ČSOB Leasing, a.s., a zároveň sa stávajú novými klientmi ČSOB (minimálne 6 predchádzajúcich kalendárnych mesiacov nemali žiaden zmluvný vzťah s ČSOB).",
+    "conditions": [
+      "Mať aktívnu zmluvu o financovaní s ČSOB Leasing, a.s.",
+      "Stať sa novým klientom ČSOB v období od 1.10.2026 do 31.12.2026 (bez zmluvného vzťahu s ČSOB aspoň 6 predchádzajúcich mesiacov)",
+      "Uzatvoriť zmluvu k platobným službám na nový Smart účet v období od 1.10.2026 do 31.12.2026 elektronicky cez www.csob.sk, výberom ponuky „Chcem Smart účet k leasingu“ alebo cez emailovú ponuku od ČSOB Leasing",
+      "Aktivovať si mobilnú aplikáciu ČSOB SmartBanking najneskôr do 30 dní od otvorenia nového Smart účtu",
+      "Odmenu možno získať iba raz; pri viacerých otvorených Smart účtoch sa vypláca len na prvý zriadený účet",
+      "Nárok na odmenu zaniká, ak v čase splatnosti odmeny účet už nie je zriadený na meno účastníka",
+      "Akciu je možné kombinovať s akciou „100 € za platby kartou“ zo dňa 9.10.2026",
+      "Akciu nie je možné kombinovať s akciou PatronGO, akciou „Poistenie s odmenou“ ani s inou akciou ČSOB s benefitom za otvorenie nového účtu pre neklientov"
+    ],
+    "reward": "Jednorazová peňažná odmena 70 € pripísaná na nový ČSOB Smart účet",
+    "reward_amount_eur": 70,
+    "date_from": "2026-10-01",
+    "date_to": "2026-12-31",
+    "payout_deadline": "Do 30 dní od otvorenia Smart účtu",
+    "payout_note": "Odmena 70 € sa vyplatí do 30 dní od otvorenia Smart účtu, ak sú splnené všetky podmienky akcie. Ak účet v čase splatnosti odmeny už nie je zriadený na meno účastníka, nárok na odmenu zaniká. Odmenu je možné získať iba raz na klienta, aj pri otvorení viacerých účtov sa vypláca len na prvý z nich.",
+    "categories": [
+      "Účty a platby",
+      "Úvery a lízing"
+    ],
+    "search_keywords": [
+      "leasing odmena",
+      "smart účet odmena 70 eur",
+      "nový účet leasing bonus",
+      "ČSOB Leasing akcia",
+      "smart odmena II",
+      "70 eur za účet"
+    ],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „100€ za platby kartou“",
     "url": "https://www.csob.sk/-/statut-akcie-100eur-za-platby-kartou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
