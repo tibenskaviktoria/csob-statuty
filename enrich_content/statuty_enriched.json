@@ -1,5 +1,31 @@
 [
   {
+    "title": "Štatút akcie „Zoberte si ma. A plaťte prémiovo.“",
+    "url": "https://www.csob.sk/-/statut-akcie-zoberte-si-ma-a-platte-premiovo?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "a27a099ba01ae0bc",
+    "short_title": "Zľavový kód na platobný prsteň/náramok Niceboy za zriadenie Smart účtu Premium",
+    "summary": "Akcia ČSOB odmeňuje klientov, ktorí si zriadia nový alebo prebalíčkujú existujúci účet na Smart účet Premium, 100% zľavovým kódom na nákup smart platobného prsteňa Niceboy ONE Ultra (1000 ks) alebo platobného náramku Niceboy ONE Infinity Zephyr (500 ks). Podmienkou je aj zriadenie/aktívne Cestovné poistenie ku karte, udržanie účtu aspoň 6 mesiacov a zabezpečenie disponibilného zostatku min. 50€, ktorý banka na 6 mesiacov zablokuje. O odmenu je potrebné požiadať osobne na pobočke.",
+    "eligibility": "Fyzické osoby - rezidenti, občania SR vo veku od 18 rokov, ktorí si v ČSOB pobočke zriadia nový Smart účet Premium alebo zmenia existujúci účet (Smart účet, Smart účet Plus, ČSOB Študentský účet FUN, ČSOB Pohoda, ČSOB Extra Pohoda) na Smart účet Premium, a ktorí k 1.8.2026 nemali zriadený Smart účet Premium. Zamestnanci ČSOB a 365 banky sú vylúčení.",
+    "conditions": [
+      "Zriadiť nový alebo zmeniť existujúci účet na Smart účet Premium v období 26.10.2026 - 31.12.2026 v pobočke ČSOB",
+      "Nesmel mať pred 1.8.2026 zriadený Smart účet Premium",
+      "Zriadiť alebo mať aktívne Cestovné poistenie k platobnej karte (Standard, Standard Family, Exclusive alebo Exclusive Family) na dobu neurčitú",
+      "Mať otvorený Smart účet Premium minimálne 6 mesiacov od zriadenia/prebalíčkovania",
+      "Do 10 dní od zriadenia/prebalíčkovania zabezpečiť disponibilný zostatok min. 50€, ktorý bude 6 mesiacov blokovaný",
+      "Požiadať o odmenu osobne v pobočke ČSOB",
+      "Nárok na odmenu len raz, aj keď si klient zriadi viac účtov",
+      "Existujúci klient má nárok len pri zmene pôvodného účtu, nie pri zriadení ďalšieho Smart účtu Premium",
+      "Nutné mať v ČSOB zadanú e-mailovú adresu pre zaslanie zľavového kódu"
+    ],
+    "reward": "100% zľavový kód na nákup platobného smart prsteňa Niceboy ONE Ultra (odporúčaná cena 159€ s DPH) alebo platobného náramku Niceboy ONE Infinity Zephyr (odporúčaná cena 72€ s DPH), využiteľný len na tokenizáciu debetnej karty Mastercard Gold alebo Standard vydanej ČSOB. Pri objednaní sa účtuje administratívny poplatok 1€ (2€ ak sa objedná aj skúšobná sada).",
+    "reward_amount_eur": 159,
+    "date_from": "2026-10-26",
+    "date_to": "2026-12-31",
+    "payout_deadline": "Do 20 dní od splnenia všetkých podmienok akcie",
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Leasing so smart odmenou II.“",
     "url": "https://www.csob.sk/-/statut-akcie-leasing-so-smart-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
