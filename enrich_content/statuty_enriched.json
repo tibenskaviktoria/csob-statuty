@@ -26,6 +26,40 @@
     "referenced_statutes_resolved": []
   },
   {
+    "title": "Štatút akcie „Spotrebiteľský úver bez poplatku za spracovanie\"",
+    "url": "https://www.csob.sk/-/statut-akcie-spotrebitelsky-uver-bez-poplatku-za-spracovanie?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "c9dcefa08e51a835",
+    "short_title": "Odpustenie poplatku za spracovanie spotrebiteľského úveru",
+    "summary": "Akcia ČSOB, pri ktorej klient, ktorý si v stanovenom období zriadi spotrebiteľský úver spĺňajúci dané parametre, nemusí platiť poplatok za spracovanie úveru. Poplatok mu nebude zaúčtovaný pri čerpaní úveru.",
+    "eligibility": "Klient, ktorý požiada o ČSOB spotrebiteľský úver a podpíše žiadosť v období od 1.11.2026 do 31.12.2026 (vrátane), úver mu bude schválený ČSOB a následne riadne načerpaný.",
+    "conditions": [
+      "Žiadosť o spotrebiteľský úver podpísaná od 1.11.2026 do 31.12.2026 (vrátane)",
+      "Úver musí byť ČSOB schválený v súlade s internými pravidlami",
+      "Schválená suma úveru musí byť vyššia ako 2 000 EUR",
+      "Schválená doba splatnosti musí byť aspoň 48 mesiacov",
+      "Úver musí byť po podpise zmluvy riadne načerpaný"
+    ],
+    "reward": "Odpustenie (nezaúčtovanie) poplatku za spracovanie spotrebiteľského úveru podľa platného Sadzobníka ČSOB",
+    "reward_amount_eur": null,
+    "date_from": "2026-11-01",
+    "date_to": "2026-12-31",
+    "payout_deadline": null,
+    "payout_note": "Poplatok za spracovanie úveru jednoducho nie je klientovi zaúčtovaný pri čerpaní úveru - nejde o spätnú výplatu, benefit sa uplatní automaticky pri splnení podmienok.",
+    "categories": [
+      "Úvery a lízing"
+    ],
+    "search_keywords": [
+      "spotrebiteľský úver bez poplatku",
+      "odpustenie poplatku za spracovanie úveru",
+      "akcia spotrebiteľský úver 2026",
+      "poplatok za spracovanie úveru zadarmo",
+      "úver bez poplatku"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Leasing so smart odmenou II.“",
     "url": "https://www.csob.sk/-/statut-akcie-leasing-so-smart-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
