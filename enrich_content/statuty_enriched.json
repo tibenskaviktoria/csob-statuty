@@ -1,5 +1,73 @@
 [
   {
+    "title": "Štatút akcie „Nové Poistenie so smart odmenou II.“",
+    "url": "https://www.csob.sk/-/statut-akcie-nove-poistenie-so-smart-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "8886e68c2194e4dc",
+    "short_title": "Odmena 70€ za nový Smart účet + poistenie v ČSOB Poisťovni",
+    "summary": "Akcia pre nových klientov ČSOB, ktorí si otvoria nový Smart účet (Smart, Smart Plus alebo Smart Premium), aktivujú ČSOB SmartBanking a zároveň si dojednajú nové poistenie (PZP, havarijné alebo Autoduo) v ČSOB Poisťovni cez webové služby ponúkajúce aj Smart účet. Pri splnení všetkých podmienok klient získa odmenu 70 €. Ide o pokračovanie/druhú verziu akcie „Nové Poistenie so smart odmenou“.",
+    "eligibility": "Fyzické osoby - rezidenti, občania SR vo veku od 18 rokov, ktorí sa stanú novými klientmi ČSOB (nemali so ČSOB žiaden zmluvný vzťah aspoň 6 predchádzajúcich celých kalendárnych mesiacov pred otvorením účtu).",
+    "conditions": [
+      "Stať sa novým klientom ČSOB v období od 1.11.2026 do 31.3.2027 (bez zmluvného vzťahu s ČSOB aspoň 6 predchádzajúcich celých kalendárnych mesiacov)",
+      "Uzatvoriť zmluvu na nový Smart účet, Smart účet Plus alebo Smart účet Premium v období od 1.11.2026 do 31.3.2027 cez web, mobilnú appku alebo pobočku, najneskôr do dátumu uvedeného v individuálnej e-mailovej ponuke",
+      "Aktivovať si mobilnú aplikáciu ČSOB SmartBanking najneskôr do 30 dní od otvorenia Smart účtu",
+      "Dojednať si nové Povinné zmluvné poistenie, Havarijné poistenie alebo Autoduo v ČSOB Poisťovni cez vybrané webové služby, ktoré súčasne ponúkajú Smart účet, a uhradiť poistné na prvé poistné obdobie",
+      "Nie je možné kombinovať s akciou „Každý nákup je investíciou II.“, s akciou „Poistenie s odmenou“ ani s inou akvizičnou akciou ČSOB pre nových klientov s podobným benefitom",
+      "Odmenu je možné získať len raz; pri viacerých otvorených účtoch sa odmena vypláca len na prvý zriadený účet"
+    ],
+    "reward": "Jednorazová peňažná odmena 70 € pripísaná na nový ČSOB Smart účet",
+    "reward_amount_eur": 70,
+    "date_from": "2026-11-01",
+    "date_to": "2027-03-31",
+    "payout_deadline": null,
+    "payout_note": "Odmena 70 € sa vypláca spravidla do 30 dní od otvorenia Smart účtu, ak je splnená aj podmienka aktivácie SmartBankingu. Ak klient zriaďuje aj nové poistenie, odmena môže byť vyplatená neskôr, až po zriadení poistenia a úhrade poistného na ďalšie poistné obdobie. Nárok zaniká, ak v čase splatnosti nie je Smart účet zriadený na meno účastníka.",
+    "categories": [
+      "Poistenie",
+      "Účty a platby"
+    ],
+    "search_keywords": [
+      "odmena za nový účet",
+      "70 eur odmena",
+      "smart účet odmena",
+      "nové poistenie odmena",
+      "PZP havarijné poistenie odmena",
+      "smart odmena II",
+      "nový klient ČSOB bonus",
+      "autoduo poistenie odmena"
+    ],
+    "referenced_statutes_resolved": []
+  },
+  {
+    "title": "Štatút akcie „Poistenie s odmenou II.“",
+    "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "2d64b4da817a8691",
+    "short_title": "Odmena 70 € za nový Smart účet + poistenie ČSOB Poisťovne",
+    "summary": "Akcia pre nových klientov ČSOB, ktorí si v období 1.11.2026 – 31.3.2027 otvoria nový Smart účet (Smart, Smart Plus alebo Smart Premium), aktivujú si do 30 dní mobilnú aplikáciu ČSOB SmartBanking a zároveň majú platné a riadne uhradené poistné aspoň jedného vybraného poistenia od ČSOB Poisťovne (na základe e-mailovej ponuky od banky alebo poisťovne/finančného agenta). Pri splnení všetkých podmienok získajú jednorazovú odmenu 70 € pripísanú na nový Smart účet.",
+    "eligibility": "Fyzická osoba, rezident SR, občan SR vo veku 18+ rokov, ktorá sa stane novým klientom ČSOB (minimálne 6 predchádzajúcich kalendárnych mesiacov nemala žiaden zmluvný vzťah s ČSOB) v období 1.11.2026 – 31.3.2027.",
+    "conditions": [
+      "Otvoriť nový Smart účet, Smart účet Plus alebo Smart účet Premium v období 1.11.2026 – 31.3.2027 cez www.csob.sk, mobilnú aplikáciu ČSOB SmartBanking alebo na pobočke, najneskôr do dátumu uvedeného v e-mailovej ponuke",
+      "Aktivovať si mobilnú aplikáciu ČSOB SmartBanking najneskôr do 30 dní od otvorenia nového Smart účtu",
+      "V čase vyhodnotenia akcie mať platné a riadne uhradené poistné na ďalšie poistné obdobie aspoň jedného z poistení: Povinné zmluvné poistenie, Havarijné poistenie, pravidelne platené Životné poistenie (rizikové/investičné), Poistenie bývania (Domos Kompakt) alebo Autoduo",
+      "K poisteniu musí klient dostať ponuku benefitu od Poisťovne alebo jej finančného agenta",
+      "Podmienkou je obdržanie e-mailovej ponuky od ČSOB",
+      "Akciu nemožno kombinovať s akciou „Každý nákup je investíciou II.“ ani s inou minulou/súčasnou/budúcou akciou ČSOB s benefitom za otvorenie nového účtu pre neklientov",
+      "Odmenu možno získať iba raz, pri viacerých účtoch sa vypláca len na prvý zriadený účet",
+      "Nárok na odmenu nevzniká, ak v čase splatnosti nie je Smart účet zriadený na meno účastníka"
+    ],
+    "reward": "Jednorazová peňažná odmena 70 € pripísaná na nový ČSOB Smart účet",
+    "reward_amount_eur": 70,
+    "date_from": "2026-11-01",
+    "date_to": "2027-03-31",
+    "payout_deadline": null,
+    "payout_note": "Odmena 70 € sa spravidla vyplatí do 30 dní od otvorenia Smart účtu, ak je splnená aj podmienka aktivácie SmartBankingu. Ak ide o zriadenie nového poistenia, odmena môže byť vyplatená neskôr, až po zriadení poistenia a uhradení poistného na ďalšie poistné obdobie.",
+    "categories": [
+      "Účty a platby",
+      "Poistenie"
+    ],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Zoberte si ma. A plaťte prémiovo.“",
     "url": "https://www.csob.sk/-/statut-akcie-zoberte-si-ma-a-platte-premiovo?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
@@ -671,8 +739,8 @@
       },
       {
         "name": "Poistenie s odmenou",
-        "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-        "title": "Štatút akcie „Poistenie s odmenou.“"
+        "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+        "title": "Štatút akcie „Poistenie s odmenou II.“"
       }
     ]
   },
@@ -750,13 +818,13 @@
     "referenced_statutes_resolved": [
       {
         "name": "Poistenie s odmenou",
-        "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-        "title": "Štatút akcie „Poistenie s odmenou.“"
+        "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+        "title": "Štatút akcie „Poistenie s odmenou II.“"
       },
       {
         "name": "Nové poistenie so smart odmenou",
-        "url": "https://www.csob.sk/-/statut-akcie-nove-poistenie-so-smart-odmenou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-        "title": "Štatút akcie „Nové Poistenie so smart odmenou“"
+        "url": "https://www.csob.sk/-/statut-akcie-nove-poistenie-so-smart-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+        "title": "Štatút akcie „Nové Poistenie so smart odmenou II.“"
       }
     ],
     "content_hash": "6c3f5148fd1b8f11"
@@ -1892,8 +1960,8 @@
       },
       {
         "name": "Poistenie s odmenou",
-        "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-        "title": "Štatút akcie „Poistenie s odmenou.“"
+        "url": "https://www.csob.sk/-/statut-akcie-poistenie-s-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+        "title": "Štatút akcie „Poistenie s odmenou II.“"
       }
     ],
     "content_hash": "342df05680744d60"
