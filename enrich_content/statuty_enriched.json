@@ -1,5 +1,75 @@
 [
   {
+    "title": "Štatút súťaže „Plaťte Mastercard Business kartou od ČSOB a vyhrajte Smart  platobný prsteň Niceboy”",
+    "url": "https://www.csob.sk/-/statut-sutaze-platte-mastercard-vyhrajte-smart-prsten-niceboy?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "4c8e974fe625601c",
+    "short_title": "Súťaž o platobný prsteň Niceboy za platby Mastercard Business kartou",
+    "summary": "Podnikatelia (FOP a PO v segmente MicroSME a SME), ktorí majú podnikateľský účet v ČSOB s kartou Mastercard Business a elektronické bankovníctvo, sa zapoja do súťaže splnením mesačných podmienok (min. 4 bezhotovostné transakcie kartou v hodnote aspoň 800 EUR a prihlásenie do internet bankingu). Zo zapojených účastníkov sa žrebuje o 190 voucherov na nákup Smart platobného prsteňa Niceboy ONE Ultra v hodnote 129 € bez DPH.",
+    "eligibility": "Podnikatelia (FOP alebo PO) zo segmentu MicroSME alebo SME, ktorí majú podnikateľský účet v ČSOB s vydanou kartou Mastercard Business a zriadené elektronické bankovníctvo (ČSOB SmartBanking, Moja ČSOB, ČSOB Business Banking alebo ČSOB MultiCash). PO zastupujú štatutárni zástupcovia.",
+    "conditions": [
+      "Mať platobnú kartu Mastercard Business k podnikateľskému účtu v ČSOB",
+      "Mať zriadené elektronické bankovníctvo (ČSOB SmartBanking, Moja ČSOB, ČSOB Business Banking alebo ČSOB MultiCash)",
+      "Počas kalendárneho mesiaca zrealizovať aspoň 4 bezhotovostné transakcie kartou Mastercard Business v celkovej hodnote minimálne 800 EUR",
+      "Prihlásiť sa aspoň 1x za kalendárny mesiac do elektronického bankovníctva (SmartBanking alebo BusinessBanking) alebo mať zriadený ČSOB MultiCash",
+      "Mať v systémoch ČSOB aktuálne telefónne číslo alebo e-mail pre kontaktovanie v prípade výhry",
+      "Jedno IČO môže počas trvania súťaže vyhrať najviac dvakrát (raz za mesiac)"
+    ],
+    "reward": "Voucher na nákup Smart platobného prsteňa Niceboy ONE Ultra v hodnote 129 € bez DPH (celkovo 190 ks)",
+    "reward_amount_eur": 129,
+    "date_from": "2026-11-01",
+    "date_to": "2026-12-31",
+    "payout_deadline": "2027-01-20",
+    "payout_note": "Žrebovanie prebieha v 2 kolách: 1. kolo najneskôr do 15.12.2026, 2. kolo najneskôr do 20.01.2027. Výherca bude kontaktovaný telefonicky alebo emailom do 10 pracovných dní od žrebovania, aktivačný kód na uplatnenie výhry mu bude zaslaný emailom po telefonickom potvrdení. Ak sa výhercu nepodarí kontaktovať do 10 pracovných dní alebo výhru odmietne, nárok zaniká a výhra prepadá náhradníkovi.",
+    "categories": [
+      "Karty",
+      "Ostatné"
+    ],
+    "search_keywords": [
+      "Mastercard Business",
+      "platobný prsteň Niceboy",
+      "súťaž karta podnikateľ",
+      "podnikateľská karta súťaž",
+      "Niceboy ONE Ultra",
+      "výhra platbou kartou",
+      "ČSOB Business súťaž"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
+    "title": "Štatút akcie „Podpora malých hypoték s benefitom na poistenie bývania“",
+    "url": "https://www.csob.sk/-/statut-akcie-podpora-malych-hypotek-s-benefitom-na-poistenie-byvania?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "24bd6516406e88de",
+    "short_title": "Bonus 120 € za poistenie nehnuteľnosti k menšej hypotéke",
+    "summary": "Akcia ČSOB pre prvých 500 klientov, ktorí si zoberú hypotéku na bývanie (nie refinancovanie) vo výške 30 000 až 80 000 EUR a zároveň si k nej uzatvoria nové poistenie nehnuteľnosti v ČSOB Poisťovni. Klient tak získa odmenu 3× 40 € (spolu 120 €), vyplácanú postupne po uhradení 1., 13. a 37. splátky úveru, ak je poistka stále aktívna a úverová zmluva platná.",
+    "eligibility": "Fyzická osoba od 18 rokov, občan SR/EÚ alebo cudzinec s pobytom v SR, ktorá požiada o hypotekárny úver na bývanie v ČSOB v stanovenom období, podpíše úverovú zmluvu s iným účelom ako refinancovanie, má v ČSOB bežný účet určený na splácanie úveru a uzatvorí novú poistnú zmluvu na poistenie nehnuteľnosti s ČSOB Poisťovňou. Akcia je limitovaná na prvých 500 klientov podľa poradia splnenia podmienok.",
+    "conditions": [
+      "Žiadosť o úver na bývanie od 01.11.2026 do 31.01.2027 (vrátane)",
+      "Podpis zmluvy o úvere najneskôr do 02.03.2027, úver s iným účelom ako refinancovanie",
+      "Úver musí byť načerpaný najneskôr do 31.01.2028",
+      "Výška čerpaného úveru 30 000 - 80 000 EUR",
+      "Klient musí mať bežný účet v ČSOB uvedený v zmluve ako účet na splácanie",
+      "Nová poistná zmluva na poistenie nehnuteľnosti s ČSOB Poisťovňou uzatvorená a zaplatená najneskôr do 01.04.2027",
+      "Poistka musí byť aktívna minimálne počas prvých 37 anuitných splátok úveru",
+      "Nárok neplatí pri poistení len domácnosti alebo pri prepoistení existujúcej zmluvy",
+      "Poradie na priznanie odmeny sa určuje podľa dátumu splnenia podmienok (úhrada poistného a prvej splátky úveru)",
+      "Odmena sa vypláca len ak je v čase výplaty poistka aj úverová zmluva stále platné"
+    ],
+    "reward": "3x 40 EUR (spolu 120 EUR) vyplácané postupne po uhradení 1., 13. a 37. anuitnej splátky úveru",
+    "reward_amount_eur": 120,
+    "date_from": "2026-11-01",
+    "date_to": "2027-04-01",
+    "payout_deadline": "2028-?? - viazané na splátky úveru, presný dátum závisí od čerpania úveru",
+    "payout_note": "Odmena sa vypláca v troch častiach na bežný účet uvedený v zmluve: prvých 40 € do 60 dní od úhrady 1. anuitnej splátky úveru, druhých 40 € do 30 dní po úhrade 13. splátky, tretích 40 € do 30 dní po úhrade 37. splátky. Podmienkou vyplatenia každej časti je aktívna poistná zmluva a platná úverová zmluva v danom čase.",
+    "categories": [
+      "Hypotéky",
+      "Poistenie"
+    ],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Nové Poistenie so smart odmenou II.“",
     "url": "https://www.csob.sk/-/statut-akcie-nove-poistenie-so-smart-odmenou-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
@@ -68,6 +138,42 @@
     "referenced_statutes_resolved": []
   },
   {
+    "title": "Štatút súťaže „Využívaj ČSOB SmartBanking naplno a vyhraj“",
+    "url": "https://www.csob.sk/-/statut-sutaze-vyuzivaj-csob-smartbanking-naplno-a-vyhraj?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "e8a99410e852215d",
+    "short_title": "Súťaž o poukážky ALZA za aktívne používanie ČSOB SmartBankingu",
+    "summary": "Súťaž pre klientov 365.bank, ktorí sú zároveň klientmi ČSOB, a ktorí neboli prihlásení do aplikácie ČSOB SmartBanking posledné 3 mesiace pred súťažou. Ak sa v novembri 2026 prihlásia do SmartBankingu, zaplatia kartou k svojmu ČSOB účtu a využijú vybranú SmartSlužbu+, zaradia sa do žrebovania o 39 poukážok ALZA v hodnote 10 EUR.",
+    "eligibility": "Fyzická osoba od 16 rokov (občan SR/EÚ alebo s povolením na pobyt v SR), ktorá je súčasne klientom 365.bank aj ČSOB k 1.11.2026, má v ČSOB účet (ČSOB Pohoda, ČSOB Extra Pohoda, ČSOB Študentský účet FUN, Smart účet, Smart účet Plus, Smart účet Premium) s vydanou debetnou kartou, nebola prihlásená v aplikácii ČSOB SmartBanking v auguste, septembri ani októbri 2026 (min. 1x mesačne), má pridelenú elektronickú identitu (IPPID), má v čase žrebovania a odoslania výhry zriadený účet bez nepovoleného debetu a má v systémoch ČSOB uvedenú aktuálnu emailovú adresu. Pri klientoch mladších ako 18 rokov s účtom vedeným spolu so zákonným zástupcom je potrebná jeho súčinnosť.",
+    "conditions": [
+      "Prihlásiť sa do aplikácie ČSOB SmartBanking v priebehu novembra 2026",
+      "Zaplatiť platobnou kartou k Účtu ČSOB v ľubovoľnej výške",
+      "Využiť minimálne raz platenú SmartSlužbu+ (MHD KE, IDS BK, ZSSK, ParkDots, Parkovanie Urbi, Dobitie kreditu) v hodnote min. 0,01 EUR z bežného účtu, ALEBO využiť ľubovoľnú neplatenú SmartSlužbu+ (uložiť vozidlo do Moja garáž, uložiť Vernostnú kartu, nahrať eBloček)"
+    ],
+    "reward": "ALZA poukážka (zľavový kód) v hodnote 10 EUR na nákup v online obchode ALZA",
+    "reward_amount_eur": 10,
+    "date_from": "2026-11-02",
+    "date_to": "2026-11-30",
+    "payout_deadline": "2026-12-31",
+    "payout_note": "Výhra bude doručená formou zľavového kódu v hodnote 10 EUR na e-mail výhercu vedený v informačnom systéme ČSOB, do 30 dní od ukončenia súťaže, najneskôr do 31.12.2026.",
+    "categories": [
+      "Účty a platby",
+      "Karty"
+    ],
+    "search_keywords": [
+      "SmartBanking súťaž",
+      "vyhraj Alza poukážku",
+      "súťaž ČSOB november",
+      "SmartSlužba+",
+      "žrebovanie ČSOB",
+      "365.bank klient ČSOB",
+      "Alza kupón 10 eur",
+      "aplikácia ČSOB súťaž"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút akcie „Zoberte si ma. A plaťte prémiovo.“",
     "url": "https://www.csob.sk/-/statut-akcie-zoberte-si-ma-a-platte-premiovo?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
@@ -91,6 +197,44 @@
     "date_from": "2026-10-26",
     "date_to": "2026-12-31",
     "payout_deadline": "Do 20 dní od splnenia všetkých podmienok akcie",
+    "referenced_statutes_resolved": []
+  },
+  {
+    "title": "Štatút akcie „Nakupuj s platobnou kartou VISA a získaj peniaze späť“",
+    "url": "https://www.csob.sk/-/statut-akcie-nakupuj-s-platobnou-kartou-visa-a-ziskaj-peniaze-spat?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "5263902a00a5d655",
+    "short_title": "Odmena 30 EUR za platbu kartou VISA",
+    "summary": "Akcia ČSOB pre majiteľov vybraných účtov s debetnou kartou VISA, ktorí touto kartou v minulosti nerobili transakcie a v období akcie zrealizujú platbu kartou minimálne vo výške 30 EUR. Odmena 30 EUR sa vypláca prvým 2166 najrýchlejším účastníkom, max. 2x na jedného klienta.",
+    "eligibility": "Fyzické osoby od 15 rokov (občania SR, EÚ alebo cudzinci s povolením na pobyt v SR), ktoré sú majiteľmi účtu ČSOB Pohoda, ČSOB Extra Pohoda, ČSOB Študentský účet FUN, Smart účet, Smart účet Plus alebo Smart účet Premium otvoreného najneskôr k 30.9.2026, s vydanou debetnou kartou VISA k tomuto účtu. Klient nesmie touto kartou uskutočniť žiadnu transakciu od 1.7.2026 do 15.10.2026 a nesmie používať inú debetnú kartu vydanú k inému účtu v ČSOB. Pre neplnoletých (do 18 rokov) s účtom so zákonným zástupcom je potrebný súhlas/konanie zákonného zástupcu.",
+    "conditions": [
+      "Byť majiteľom jedného z vybraných účtov s dátumom otvorenia najneskôr 30.9.2026",
+      "Mať k účtu vydanú debetnú platobnú kartu VISA",
+      "Nemať touto kartou uskutočnenú žiadnu transakciu od 1.7.2026 do 15.10.2026",
+      "Nepoužívať inú debetnú kartu vydanú k inému účtu v ČSOB",
+      "V období trvania akcie (1.11.2026 - 30.11.2026) zrealizovať kartou platbu minimálne 30 EUR",
+      "Zaradiť sa medzi prvých 2166 najrýchlejších účastníkov podľa dátumu platby",
+      "Účet musí byť v čase pripísania odmeny stále aktívny a nesmie byť v nepovolenom debete"
+    ],
+    "reward": "30 EUR za splnenie podmienok, max. 2x 30 EUR pri opakovanom splnení podmienok. Vyplatených bude maximálne 2166 odmien.",
+    "reward_amount_eur": 30,
+    "date_from": "2026-11-01",
+    "date_to": "2026-11-30",
+    "payout_deadline": "2026-12-21",
+    "payout_note": "Odmena bude pripísaná na účet, ku ktorému bola vydaná karta, ktorou bola realizovaná platba, najneskôr do 21.12.2026. Vypláca sa len prvým 2166 najrýchlejším účastníkom podľa dátumu platby.",
+    "categories": [
+      "Karty",
+      "Účty a platby"
+    ],
+    "search_keywords": [
+      "30 eur za platbu kartou",
+      "odmena za nákup kartou VISA",
+      "peniaze späť za platbu kartou",
+      "akcia nakupuj s kartou VISA",
+      "odmena za aktiváciu debetnej karty",
+      "cashback ČSOB karta"
+    ],
+    "referenced_statutes": [],
     "referenced_statutes_resolved": []
   },
   {
