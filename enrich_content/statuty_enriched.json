@@ -1,5 +1,74 @@
 [
   {
+    "title": "Štatút akcie „Vrátenie 1 až 3 anuitných splátok pri refinancovaní hypotéky z inej banky - platí pre žiadosti podané v období od 01.11.2026 do 31.01.2027“",
+    "url": "https://www.csob.sk/-/statut-akcie-vratenie-1-az-4-anuitnych-splatok-pri-refinancovani-hypoteky-z-inej-banky-plati-pre-ziadost-od-01112026-do-31012027?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "a88e09e6b0348075",
+    "short_title": "Vrátenie 1-3 splátok hypotéky pri refinancovaní z inej banky",
+    "summary": "Akcia pre klientov, ktorí si zoberú hypotéku v ČSOB na refinancovanie (splatenie) úveru na bývanie z inej banky. Pri splnení podmienok (poistenie nehnuteľnosti DOMOS Kompakt, bežný účet v ČSOB, presun platobného účtu z inej banky do ČSOB) klient získa finančný benefit vo výške 1 až 3 anuitných splátok hypotéky podľa výšky úveru. Benefit sa vypláca po uhradení tretej anuitnej splátky úveru.",
+    "eligibility": "Fyzické osoby - občania SR, EÚ alebo cudzinci s povolením na pobyt v SR, ktorí požiadajú o hypotéku v ČSOB na refinancovanie úveru na bývanie z inej banky v stanovenom období.",
+    "conditions": [
+      "Žiadosť o úver na bývanie podaná od 01.11.2026 do 31.01.2027 (vrátane)",
+      "Zmluva o úvere podpísaná najneskôr do 02.03.2027",
+      "Úver načerpaný najneskôr do 31.01.2028",
+      "Účelom úveru je refinancovanie - splatenie skôr poskytnutého úveru na bývanie z inej banky (ak je aj iný účel, väčšina prostriedkov musí ísť na refinancovanie)",
+      "Prvý dlžník v Zmluve si zriadi v ČSOB Poisťovni poistenie nehnuteľnosti DOMOS Kompakt zabezpečujúcej úver, uhradené najneskôr ku dňu prvého čerpania úveru (alebo má toto poistenie už existujúce)",
+      "Klient má bežný účet v ČSOB (nie technický), uvedený v Zmluve ako účet pre splácanie",
+      "Niektorý z dlžníkov požiada ČSOB o presun a zrušenie platobného účtu z inej banky (SR) do ČSOB",
+      "Presun sa týka balíkov: ČSOB účet Pohoda, ČSOB účet Extra Pohoda, Smart účet, Smart účet Plus alebo Smart účet Premium",
+      "ČSOB musí mať v čase vyhodnotenia potvrdené iným poskytovateľom, že pôvodný účet bol zrušený",
+      "Zmluva o úvere aj zmluva k poisteniu DOMOS Kompakt musia existovať a byť riadne plnené v čase vyplatenia benefitu",
+      "Nárok na benefit nevzniká pri refinancovaní z ČSOB, bývalej OTP Banky Slovensko, a.s., 365.bank, a.s. (Poštová banka) alebo jej odštepného závodu"
+    ],
+    "reward": "Peňažný benefit vo výške 1 až 3 anuitných splátok úveru podľa výšky poskytnutého úveru: do 50 000 EUR = 1 splátka (max. 500 EUR), nad 50 000 do 100 000 EUR = 2 splátky (max. 1 000 EUR), nad 100 000 EUR = 3 splátky (max. 1 500 EUR). Vypláca sa jednorazovo na bežný účet klienta.",
+    "reward_amount_eur": 1500,
+    "date_from": "2026-11-01",
+    "date_to": "2027-01-31",
+    "payout_deadline": "60 kalendárnych dní od uhradenia tretej anuitnej splátky úveru",
+    "payout_note": "Benefit sa vypláca jednorazovo na bežný účet klienta v ČSOB, a to do 60 dní od uhradenia tretej anuitnej splátky úveru podľa zmluvy.",
+    "referenced_statutes_resolved": []
+  },
+  {
+    "title": "Štatút akcie „Odmena za energetický certifikát - platí pre žiadosti podané v období od 1.11.2026 do 31.01.2027“",
+    "url": "https://www.csob.sk/-/statut-akcie-odmena-za-energeticky-certifikat-plati-pre-ziadosti-podane-v-obdobi-od-01112026-do-31012027?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "44577d6957645e3e",
+    "short_title": "Odmena 100 € za predloženie energetického certifikátu k úveru na bývanie",
+    "summary": "Klient, ktorý si v ČSOB zriadi úver na bývanie a k financovanej nehnuteľnosti predloží platný energetický certifikát triedy B alebo lepšej, získa jednorazovú odmenu 100 EUR. Akcia platí pre žiadosti o úver podané od 1.11.2026 do 31.1.2027.",
+    "eligibility": "Klient, ktorý požiada o úver na bývanie v ČSOB od 1.11.2026 do 31.1.2027 (vrátane), podpíše zmluvu o úvere najneskôr do 2.3.2027, má v ČSOB bežný účet uvedený v zmluve ako účet na splácanie úveru a riadne spláca úver.",
+    "conditions": [
+      "Žiadosť o úver na bývanie podaná od 1.11.2026 do 31.1.2027 (vrátane)",
+      "Zmluva o úvere podpísaná najneskôr do 2.3.2027 (vrátane)",
+      "Účel úveru: kúpa nehnuteľnosti, rekonštrukcia/zariadenie/modernizácia a oprava, výstavba/prestavba (s predložením energetického certifikátu spolu s právoplatným kolaudačným rozhodnutím), vysporiadanie majetkových pomerov, splatenie skorších úverov, alebo kombinácia týchto účelov",
+      "Predloženie platného energetického certifikátu k financovanej nehnuteľnosti do 6 mesiacov od dočerpania úveru (pri výstavbe/prestavbe spolu s kolaudačným rozhodnutím v lehote podľa zmluvy)",
+      "Energetický certifikát musí mať triedu B alebo lepšiu (primárna energia)",
+      "Benefit je možné získať pri danej financovanej nehnuteľnosti iba raz",
+      "Klient musí mať bežný účet v ČSOB (nie technický), uvedený v zmluve ako účet na splácanie úveru",
+      "Zmluva musí existovať a klient musí riadne a včas splácať anuitné splátky v čase vyplatenia benefitu",
+      "Nárok nevzniká pri bezúčelovom úvere",
+      "Nárok nevzniká, ak klient už k rovnakému objektu úveru certifikát doložil a žiada o ďalší úver"
+    ],
+    "reward": "Jednorazová peňažná odmena 100 EUR vyplatená na bežný účet klienta",
+    "reward_amount_eur": 100,
+    "date_from": "2026-11-01",
+    "date_to": "2027-01-31",
+    "payout_deadline": "Do 90 kalendárnych dní po splnení všetkých podmienok štatútu",
+    "payout_note": "Benefit sa vypláca na bežný účet klienta vedený v ČSOB, ktorý je v zmluve uvedený ako účet pre splácanie úveru. Pri developerských projektoch podporovaných ČSOB nemusí certifikát predkladať klient, stačí ak ho predloží developer pri kolaudácii.",
+    "categories": [
+      "Hypotéky"
+    ],
+    "search_keywords": [
+      "odmena za energetický certifikát",
+      "100 eur úver na bývanie",
+      "bonus za energetický certifikát",
+      "hypotéka energetický certifikát",
+      "energetická trieda B odmena",
+      "benefit k úveru na bývanie"
+    ],
+    "referenced_statutes": [],
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút súťaže „Plaťte Mastercard Business kartou od ČSOB a vyhrajte Smart  platobný prsteň Niceboy”",
     "url": "https://www.csob.sk/-/statut-sutaze-platte-mastercard-vyhrajte-smart-prsten-niceboy?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
@@ -575,77 +644,6 @@
       "občianske združenie účet",
       "vedenie účtu zadarmo navždy",
       "nový podnikateľský klient odmena"
-    ],
-    "referenced_statutes": [],
-    "referenced_statutes_resolved": []
-  },
-  {
-    "title": "Štatút akcie „Vrátenie 1 až 4 anuitných splátok pri refinancovaní hypotéky z inej banky - platí pre žiadosti podané v období od 01.09.2026 do 31.10.2026“",
-    "url": "https://www.csob.sk/-/statut-akcie-vratenie-1-az-4-anuitnych-splatok-pri-refinancovani-hypoteky-z-inej-banky-plati-pre-ziadost-od-01092026-do-31102026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-    "source": "aktualne",
-    "content_hash": "e1d2b630cc464ea9",
-    "short_title": "Vrátenie splátok hypotéky pri refinancovaní z inej banky (jeseň 2026)",
-    "summary": "Akcia pre klientov, ktorí si v ČSOB zriadia hypotéku na refinancovanie (splatenie) úveru na bývanie z inej banky. Okrem refinancovania musia zriadiť poistenie nehnuteľnosti DOMOS Kompakt, mať v ČSOB bežný účet na splácanie a presunúť si platobný účet z inej banky do ČSOB (v rámci vybraných balíkov účtov). Pri splnení všetkých podmienok klient dostane odmenu vo forme preplatenia 1 až 4 anuitných splátok úveru podľa výšky úveru.",
-    "eligibility": "Fyzická osoba – občan SR, občan iného členského štátu EÚ, alebo občan iného štátu s povolením na pobyt v SR, ktorý žiada o hypotéku (Úver na bývanie) v ČSOB v období akcie.",
-    "conditions": [
-      "Žiadosť o Úver na bývanie v ČSOB podaná od 1.9.2026 do 31.10.2026 (vrátane)",
-      "Zmluva o úvere podpísaná najneskôr do 30.11.2026",
-      "Úver načerpaný najneskôr do 31.10.2027",
-      "Účel úveru je refinancovanie (splatenie) skôr poskytnutého úveru na bývanie z inej banky (ak je aj iný účel, väčšina prostriedkov musí ísť na refinancovanie)",
-      "Dlžník prvý v poradí si zriadi v ČSOB Poisťovni poistenie nehnuteľnosti DOMOS Kompakt zabezpečujúcej Úver, poistka zriadená a uhradená najneskôr ku dňu prvého čerpania Úveru (alebo už existujúce poistenie DOMOS Kompakt)",
-      "Klient má v ČSOB bežný účet (nie technický), uvedený v Zmluve ako Účet pre splácanie",
-      "Ktorýkoľvek z dlžníkov požiada o presun a zrušenie platobného účtu z inej banky do ČSOB (balík ČSOB účet Pohoda, ČSOB účet Extra Pohoda, Smart účet, Smart účet Plus alebo Smart účet Premium)",
-      "ČSOB musí mať v čase vyhodnotenia potvrdené inou bankou, že pôvodný účet bol zrušený",
-      "Zmluva o úvere aj Zmluva o poistení DOMOS Kompakt musia existovať a byť riadne plnené v čase vyplatenia Benefitu",
-      "Nárok na Benefit nevzniká pri refinancovaní hypotéky z ČSOB, bývalej OTP Banky Slovensko, 365.bank (Poštová banka)"
-    ],
-    "reward": "Vrátenie 1 až 4 anuitných splátok úveru podľa výšky poskytnutého úveru: do 50 000 EUR = 1 splátka (max. 500 EUR), nad 50 000 do 100 000 EUR = 2 splátky (max. 1 000 EUR), nad 100 000 do 150 000 EUR = 3 splátky (max. 1 500 EUR), nad 150 000 EUR = 4 splátky (max. 2 000 EUR)",
-    "reward_amount_eur": 2000,
-    "date_from": "2026-09-01",
-    "date_to": "2026-10-31",
-    "payout_deadline": null,
-    "payout_note": "Benefit sa vyplatí na bežný účet klienta do 60 kalendárnych dní od uhradenia štvrtej anuitnej splátky úveru podľa Zmluvy.",
-    "categories": [
-      "Hypotéky",
-      "Poistenie"
-    ],
-    "referenced_statutes_resolved": []
-  },
-  {
-    "title": "Štatút akcie „Odmena za energetický certifikát - platí pre žiadosti podané v období od 1.9.2026 do 31.10.2026“",
-    "url": "https://www.csob.sk/-/statut-akcie-odmena-za-energeticky-certifikat-plati-pre-ziadosti-podane-v-obdobi-od-01092026-do-31102026?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
-    "source": "aktualne",
-    "content_hash": "672e523118f2907d",
-    "short_title": "Odmena 100 € za predloženie energetického certifikátu k úveru na bývanie",
-    "summary": "Klient, ktorý si v ČSOB vybaví úver na bývanie a k financovanej nehnuteľnosti predloží platný energetický certifikát triedy B alebo lepšej, získa jednorazovú odmenu 100 EUR. Akcia platí pre žiadosti o úver podané od 1.9.2026 do 31.10.2026, zmluva musí byť podpísaná najneskôr do 30.11.2026.",
-    "eligibility": "Klient, ktorý požiada o úver na bývanie v ČSOB od 1.9.2026 do 31.10.2026 (vrátane) a podpíše zmluvu o úvere najneskôr do 30.11.2026, a súčasne má v ČSOB bežný účet (nie technický), ktorý je v zmluve uvedený ako účet na splácanie úveru.",
-    "conditions": [
-      "Žiadosť o úver na bývanie podaná od 1.9.2026 do 31.10.2026 (vrátane)",
-      "Zmluva o úvere podpísaná najneskôr do 30.11.2026",
-      "Účel úveru: kúpa nehnuteľnosti, rekonštrukcia/modernizácia/oprava, výstavba/prestavba (s energetickým certifikátom a kolaudačným rozhodnutím), vysporiadanie majetkových pomerov, splatenie skorších úverov, alebo kombinácia",
-      "Predloženie platného energetického certifikátu k financovanej nehnuteľnosti do 6 mesiacov od dočerpania úveru (pri výstavbe/prestavbe spolu s kolaudačným rozhodnutím v lehote určenej zmluvou)",
-      "Energetický certifikát musí mať triedu B alebo lepšiu (primárna energia)",
-      "Benefit možno získať k danej nehnuteľnosti iba raz",
-      "Klient musí mať bežný účet v ČSOB uvedený v zmluve ako účet na splácanie úveru",
-      "Zmluva musí existovať a klient musí riadne a včas splácať anuitné splátky úveru v čase vyplatenia benefitu",
-      "Nárok nevzniká pri bezúčelovom úvere alebo ak klient už certifikát k rovnakému objektu úveru doložil pri predchádzajúcom úvere"
-    ],
-    "reward": "Jednorazová peňažná odmena 100 EUR vyplatená na bežný účet klienta",
-    "reward_amount_eur": 100,
-    "date_from": "2026-09-01",
-    "date_to": "2026-10-31",
-    "payout_deadline": "Do 90 kalendárnych dní po splnení všetkých podmienok",
-    "payout_note": "Benefit sa vypláca na bežný účet klienta vedený v ČSOB, ktorý je v zmluve uvedený ako účet na splácanie úveru, do 90 kalendárnych dní od splnenia všetkých podmienok akcie.",
-    "categories": [
-      "Hypotéky"
-    ],
-    "search_keywords": [
-      "energetický certifikát",
-      "odmena za certifikát",
-      "100 eur úver na bývanie",
-      "hypotéka odmena",
-      "energetická trieda B",
-      "bonus k úveru na bývanie"
     ],
     "referenced_statutes": [],
     "referenced_statutes_resolved": []
