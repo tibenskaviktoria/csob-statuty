@@ -1158,39 +1158,26 @@
     "title": "Štatút akcie „Vstúpte do sveta investícií - podporíme Vás bonusom II. “",
     "url": "https://www.csob.sk/-/statut-akcie-vstupte-do-sveta-investicii-podporime-vas-bonusom-ii?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
-    "short_title": "Bonus 50 EUR za založenie pravidelného investovania",
-    "summary": "Klient, ktorý si zriadi nový Investičný program (pravidelné investovanie) v hodnote min. 30 EUR formou trvalého príkazu, predtým nemal žiadne investície v ČSOB a splní podmienky platieb a kreditného obratu na účte, získa jednorazový bonus 50 EUR investovaný do fondu v rámci jeho nového investičného programu.",
-    "eligibility": "Fyzická osoba - občan SR alebo občan iného členského štátu EÚ, klient ČSOB, ktorý má bežný účet v ČSOB (Pohoda, Extra Pohoda, FUN, Sloník, Smart účet a jeho varianty). Aj klienti mladší ako 15 rokov (cez účet rodiča) a mladší ako 18 rokov (so zákonným zástupcom).",
+    "content_hash": "9efd6cbdd7f4e2e0",
+    "short_title": "Bonus 30 EUR za založenie pravidelného investovania",
+    "summary": "Akcia ČSOB ponúka klientom bonus 30 EUR formou investície do fondu, ak si v období 1.11.2026-31.12.2026 založia nový Investičný program (pravidelné investovanie min. 30 EUR mesačne) cez trvalý príkaz z bežného účtu v ČSOB, predtým (od 1.1.2026 do 31.10.2026) neinvestovali do žiadneho fondu ČSOB, zrealizujú aspoň 2 investičné platby (prvú počas trvania akcie, druhú najneskôr do 28.2.2027) a zároveň splnia podmienku kreditného obratu na bežnom účte počas aspoň 2 mesiacov. Ide o pokračovanie/aktualizáciu predchádzajúcej akcie s rovnakým názvom (verzia II.).",
+    "eligibility": "Fyzická osoba - občan SR alebo iného členského štátu EÚ, klient ČSOB, ktorý si založí nový Investičný program a má bežný účet v ČSOB (Pohoda, Extra Pohoda, ČSOB Študentský účet FUN, Detský účet Sloník, Smart účet, Smart účet Plus, Smart účet Premium, Smart účet Start). Pre maloletých do 18 rokov je potrebný súhlas/konanie zákonného zástupcu.",
     "conditions": [
-      "Zriadiť nový Investičný program (pravidelné investovanie) v hodnote min. 30 EUR v období 15.4.2026 - 31.12.2026",
-      "V období 1.1.2026 - 31.3.2026 klient nesmel investovať formou trvalého príkazu do žiadneho fondu ČSOB (pravidelne ani jednorazovo)",
-      "Platby do pravidelného investovania musia byť nastavené formou trvalého príkazu z účtu klienta vedeného v ČSOB (pri klientoch do 15 rokov môže byť aj z účtu rodiča)",
-      "V rámci nového Investičného programu zrealizovať trvalým príkazom platbu min. 30 EUR počas 2 mesiacov, pripísanú na zberný účet fondu najneskôr do 28.2.2027",
-      "Splniť podmienku kreditného obratu min. 2 mesiace najneskôr do 28.2.2027: min. 200 EUR na bežnom účte Pohoda/Extra Pohoda/FUN/Smart účet a jeho varianty, alebo min. 30 EUR na detskom účte Sloník/Smart Start pri klientovi mladšom ako 15 rokov",
-      "Pri klientovi mladšom ako 18 rokov je potrebná účasť/konanie zákonného zástupcu"
+      "V období 1.11.2026 – 31.12.2026 založiť nový Investičný program (pravidelné investovanie) s pravidelnou platbou min. 30 EUR mesačne formou trvalého príkazu z bežného účtu v ČSOB.",
+      "Od 1.1.2026 do 31.10.2026 klient nesmel investovať do žiadneho fondu ČSOB (ani pravidelne, ani jednorazovo).",
+      "V rámci nového Investičného programu zrealizovať aspoň 2 investičné platby, každú min. 30 EUR: prvá musí byť pripísaná na zberný účet fondu počas trvania akcie (1.11.2026-31.12.2026), druhá najneskôr do 28.2.2027.",
+      "Samotné zriadenie programu/trvalého príkazu bez realizácie platby sa nepočíta - podmienka je splnená až pripísaním platieb.",
+      "Na bežnom účte, z ktorého je nastavený trvalý príkaz, splniť kreditný obrat min. 200 EUR počas aspoň 2 mesiacov (najneskôr do 28.2.2027); pre klienta mladšieho ako 15 rokov min. 30 EUR na detskom účte/Smart Start.",
+      "Pre klienta mladšieho ako 15 rokov je irelevantné, z akého účtu bol trvalý príkaz zriadený, podmienkou je aspoň 2 mesiace kreditný obrat 30 EUR na detskom účte a zároveň 2 mesiace platba do investovania min. 30 EUR.",
+      "Pri účastníkovi mladšom ako 18 rokov je potrebná účasť/konanie zákonného zástupcu.",
+      "Ak si klient založí viac Investičných programov, bonus bude pripísaný len na jeden, podľa rozhodnutia ČSOB."
     ],
-    "reward": "Jednorazový bonus 50 EUR (vrátane vstupného poplatku) vo forme investície do fondu v rámci nového Investičného programu klienta",
-    "reward_amount_eur": 50,
-    "date_from": "2026-04-15",
+    "reward": "Jednorazový bonus vo výške 30 EUR (vrátane vstupného poplatku) vo forme investície do fondu, pripísaný na zberný účet novozriadeného Investičného programu klienta.",
+    "reward_amount_eur": 30,
+    "date_from": "2026-11-01",
     "date_to": "2026-12-31",
-    "payout_deadline": "2027-06-28",
-    "payout_note": "Bonus bude pripísaný na zberný účet fondu k novému Investičnému programu najneskôr do 4 mesiacov od splnenia všetkých podmienok (podmienky je možné splniť najneskôr do 28.2.2027, teda výplata najneskôr približne do konca júna 2027). Ak klient zriadi viac Investičných programov, bonus sa pripíše len na jeden podľa rozhodnutia ČSOB.",
-    "categories": [
-      "Investovanie",
-      "Účty a platby"
-    ],
-    "search_keywords": [
-      "bonus za investovanie",
-      "50 eur investícia",
-      "pravidelné investovanie odmena",
-      "investičný program bonus",
-      "nový investičný program",
-      "bonus fond ČSOB",
-      "trvalý príkaz investovanie odmena"
-    ],
-    "referenced_statutes": [],
-    "referenced_statutes_resolved": [],
-    "content_hash": "852f1cd92d48e6b3"
+    "payout_deadline": "Najneskôr do 4 mesiacov od splnenia všetkých podmienok akcie",
+    "referenced_statutes_resolved": []
   },
   {
     "title": "Štatút akcie „Je výhodné dostať jednu splátku späť III“",
