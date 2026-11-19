@@ -1,5 +1,33 @@
 [
   {
+    "title": "Štatút akcie „Odmena pre deti bývalých Smartie klientov“",
+    "url": "https://www.csob.sk/-/statut-akcie-odmena-pre-deti-byvalych-smartie-klientov?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
+    "source": "aktualne",
+    "content_hash": "b4d7fd09e7d59fcb",
+    "short_title": "Odmena 30 € za založenie Smart účtu Start pre deti bývalých klientov Smartie",
+    "summary": "Akcia je určená pre zákonných zástupcov maloletých detí, ktorí mali v 365.bank produkt/službu Smartie s kartou viazanou na bežný účet, pričom im bolo doručené oznámenie o ukončení Smartie. Ak takýto zákonný zástupca založí svojmu dieťaťu nový účet Smart účet Start v ČSOB, dieťa (jeho účet) dostane odmenu 30 Eur. Podmienkou je, že dieťa predtým nemalo v ČSOB žiadny vlastný bankový produkt (Detský účet Sloník ani Smart účet Start).",
+    "eligibility": "Fyzické osoby - maloletí klienti (deti), za ktorých koná zákonný zástupca, ktorí sa stanú novými klientmi ČSOB v období od 23.11.2026 do 31.03.2027 a uzatvoria Zmluvu o účte Smart účet Start. Podmienkou je, že dieťa k 22.11.2026 nemalo v ČSOB žiaden bankový produkt (ani Detský účet Sloník, ani Smart účet Start) a že zákonný zástupca mal k 22.11.2026 zriadenú službu/produkt Smartie s vydanou bezkontaktnou kartou viazanou na jeho bežný účet v 365.bank a bolo mu 23.11.2026 doručené Oznámenie o ukončení Smartie. Zúčastniť sa môžu aj deti zamestnancov ČSOB FS.",
+    "conditions": [
+      "Dieťa sa musí stať novým klientom ČSOB v období 23.11.2026 - 31.03.2027 (k 22.11.2026 nesmelo mať žiaden bankový produkt v ČSOB)",
+      "Musí byť uzatvorená Zmluva o účte Smart účet Start pre maloletého",
+      "Smart účet Start musí byť otvorený aj v čase vyhodnotenia akcie",
+      "Dieťa v deň uzatvorenia zmluvy nesmelo mať zriadený Detský účet Sloník ani Smart účet Start",
+      "Zákonný zástupca musí mať k 22.11.2026 zriadenú službu/produkt Smartie s vydanou bezkontaktnou kartou viazanou na jeho bežný účet v 365.bank",
+      "Zákonnému zástupcovi muselo byť dňa 23.11.2026 doručené Oznámenie o ukončení Smartie",
+      "Zo súťaže sú vylúčení existujúci maloletí klienti, ktorí už majú iný aktívny detský účet (Sloník alebo Smart účet Start)",
+      "Zo súťaže sú vylúčení maloletí, ktorých zákonnému zástupcovi bola karta Smartie k Účtu Plus/Účtu zadarmo vydaná 23.11.2026 alebo neskôr",
+      "Počet zriadených detských účtov jedným zákonným zástupcom nie je obmedzený - odmenené budú všetky splnené deti",
+      "Ak účastník zriadi viac ako jeden Smart účet Start, odmena sa poskytne len na účet zriadený ako prvý v poradí",
+      "Prípadnú daňovú povinnosť si účastník rieši sám"
+    ],
+    "reward": "Jednorazová peňažná odmena 30 Eur pripísaná na Smart účet Start maloletého klienta",
+    "reward_amount_eur": 30,
+    "date_from": "2026-11-23",
+    "date_to": "2027-03-31",
+    "payout_deadline": "2027-04-30",
+    "referenced_statutes_resolved": []
+  },
+  {
     "title": "Štatút súťaže „Vyhraj Playstation 5 so Smart účtom“",
     "url": "https://www.csob.sk/-/statut-sutaze-vyhraj-playstation-5-so-smart-uctom?redirect=%2Fdolezite-dokumenty%2Fstatuty-sutazi",
     "source": "aktualne",
